@@ -37,5 +37,10 @@ Not using SSH:
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
+With Git bash on Windows and npm
+```
+$ export GIT_USER=<Your GitHub username>
+$ npm run deploy
+```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

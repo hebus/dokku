@@ -31,7 +31,7 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  return <Redirect to="/sba-angular/docs/" />
+  return <Redirect to="/docs/" />
 
 //   const {siteConfig} = useDocusaurusContext();
 //   return (
