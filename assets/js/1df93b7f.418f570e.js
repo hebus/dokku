@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3237],{13808:(e,t,s)=>{s.r(t),s.d(t,{default:()=>n});var a=s(67294),u=(s(39960),s(52263),s(16550));function n(){return a.createElement(u.l_,{to:"/sba-angular/docs/"})}}}]);
