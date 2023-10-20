@@ -10,9 +10,6 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
-  const url = `/${siteConfig.baseUrl}docs/`;
-
-  return <Redirect to={url} />
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -33,7 +30,7 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
-  const url = `/${siteConfig.baseUrl}docs/`;
+  const url = `/${siteConfig.projectName}/docs/`;
 
   return <Redirect to={url} />
 
