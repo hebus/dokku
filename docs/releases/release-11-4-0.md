@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 11.4.0
-nav_order: 109
+sidebar_position: 109
 parent: Releases
 ---
 

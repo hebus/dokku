@@ -18,9 +18,8 @@ There are essentially two ways of doing this in the SBA framework:
 
 The first one is not specific to Sinequa: You can simply store your settings in a global TypeScript file that you can import anywhere in your app. An example of this is available in [Vanilla Search](/apps/2-vanilla-search.md) with the `src/config.ts` file. You can use this file to store any data you need, and then import this data from a component or service.
 
-`src/config.ts`:
 
-```ts
+```ts title="config.ts"
 export const FACETS = [
     {
         "title": "Companies",
@@ -34,9 +33,7 @@ export const FACETS = [
 ]
 ```
 
-`src/app/app.component.ts`:
-
-```ts
+```ts title="app.component.ts"
 import { FACETS } from "../config";
 
 ...
@@ -45,9 +42,7 @@ public getFacets(){
 }
 ```
 
-`src/app/app.component.html`:
-
-```html
+```html title="app.component.html"
 <sq-facet-card *ngFor="let facet of getFacets()" [title]="facet.title">
     <sq-facet-list #facet [results]="results" [aggregation]="facet.aggregation"></sq-facet-list>
 </sq-facet-card>
@@ -65,9 +60,7 @@ We can adapt our first example:
 
 ![Server config](/assets/tipstricks/config.png)
 
-`src/app/app.component.ts`:
-
-```ts
+```ts title="app.component.ts"
 import { AppService } from '@sinequa/core/app-utils';
 
 ...
@@ -88,7 +81,7 @@ In [Vanilla Search](/apps/2-vanilla-search.md) both approaches are used. By defa
 
 For example, the Home component has the following logic for listing the active *features* (resulting in specific facets on the home page):
 
-```ts
+```ts title="home.component.ts"
 import { AppService } from '@sinequa/core/app-utils';
 import { FEATURES } from '../../config';
 

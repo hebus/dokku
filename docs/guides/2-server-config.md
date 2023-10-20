@@ -2,7 +2,7 @@
 layout: default
 title: Server configuration
 parent: Guides
-nav_order: 2
+sidebar_position: 2
 ---
 
 # Server configuration

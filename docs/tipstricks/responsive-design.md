@@ -31,7 +31,7 @@ Similarly, you can hide or show elements with a `display: none;` property, or ch
 
 These media query rules are also used by UI frameworks, like [**Bootstrap**](https://getbootstrap.com/). With Bootstrap, rather than writing rules in *your* stylesheet, you assign predefined rules to your HTML elements with class names (these class names include screen size modifiers that make the app responsive).
 
-The [**Grid System**](https://getbootstrap.com/docs/4.4/layout/grid/) of Bootstrap allows you to design your app according to a layout that self-adjusts depending on the size of the screen. The names of the screen size modifiers used by bootstrap are by convention `xs`, `sm`, `md`, `lg`, `xl`, and each corresponds to a default **screen width range**. These sizes can be customized for your app, by setting your own sizes in CSS variables **before** importing Bootstrap (See [the tutorial on Responsive Design](/tutorial/responsive-design.md)).
+The [**Grid System**](https://getbootstrap.com/docs/5.3/layout/grid/) of Bootstrap allows you to design your app according to a layout that self-adjusts depending on the size of the screen. The names of the screen size modifiers used by bootstrap are by convention `xs`, `sm`, `md`, `lg`, `xl`, and each corresponds to a default **screen width range**. These sizes can be customized for your app, by setting your own sizes in CSS variables **before** importing Bootstrap (See [the tutorial on Responsive Design](/tutorial/responsive-design.md)).
 
 Using Bootstrap is a good way to make your application responsive, all while minimizing the size of your stylesheet. In the SBA Framework, Bootstrap is used extensively:
 
@@ -55,7 +55,7 @@ To use the `UIService`, do the following:
 
 - First, inject the screen sizes you want to use in your `app.module.ts` (unless you are fine with the defaults):
 
-    ```ts
+    ```ts title="app.module.ts"
     import { SCREEN_SIZE_RULES } from '@sinequa/components/utils';
 
     ...

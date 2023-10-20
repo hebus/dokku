@@ -19,9 +19,7 @@ In the case of the Sinequa SBA Framework, the parameters which often need to be 
 
 To take an example, let's say you have to develop your SBA with a Sinequa server at `https://sinequa-dev.customer.com` and you will deploy your production application on `https://sinequa.customer.com`. You may have something like the following:
 
-`app.module.ts`:
-
-```ts
+```ts title="app.module.ts"
 import { environment } from "../environments/environment";
 
 export const startConfig: StartConfig = {
@@ -33,9 +31,7 @@ export const startConfig: StartConfig = {
 };
 ```
 
-`src/environment/environment.ts`:
-
-```ts
+```ts title="environment/environment.ts"
 export const environment = {
   url: "https://sinequa-dev.customer.com",
   app: "enterprise-search-app",
@@ -46,9 +42,7 @@ export const environment = {
 
 (Notice that `autoSAMLProvider` is omitted, meaning we will use default login/password authentication in `dev`)
 
-`src/environment/environment.prod.ts`:
-
-```ts
+```ts title="environment/environment.prod.ts"
 export const environment = {
   url: "https://sinequa-prod.customer.com",
   app: "enterprise-search-app",

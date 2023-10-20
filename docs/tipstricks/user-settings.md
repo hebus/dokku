@@ -81,7 +81,7 @@ The service immediately subscribes to 3 types of events:
 - Its own events (`this._events`), which is simply used to emit the "change" events (as defined [above](#events-and-event-types)), in function on their event type.
 - External service(s): In this case we subscribe to `SearchService` events and create a new `RecentQuery` every time a query is created or modified.
 
-```ts
+```ts title="recent-queries.service.ts"
 @Injectable({
     providedIn: 'root',
 })
@@ -142,7 +142,7 @@ export class RecentQueriesService implements OnDestroy {
 
 The following methods allow to retrieve the list of recent queries, directly from the User Settings. Notice that `this.recentqueries` is just a proxy for `this.userSettingsService.userSettings["recentQueries"]`, and this value is initialized as an empty list if it does not exist. Also notice in the code of `recentquery()` and `recentqueryIndex()` that recent queries are identified by their `query.text`: This is a strong assumption since a `Query` object has many other fields, but this allows to avoid near-duplicate queries and to store only the latest value (likely most relevant).
 
-```ts
+```ts title="recent-queries.service.ts"
 /**
  * Returns the list of this user's recent queries.
  * The list is stored in the user settings (this is a redirection).
@@ -193,7 +193,7 @@ The `addRecentQuery()` method allows to add a recent query to the user settings.
 - Truncate the list based on the `maxQueries` parameter.
 - Patch the User Settings (we only update the server with the part of the user settings that changed), which includes sending an Audit event.
 
-```ts
+```ts title="recent-queries.service.ts"
 /**
  * Creates a new recent query unless it already exists, in which case the existing query is updated.
  * Emits an recentquery event.
@@ -248,7 +248,7 @@ public addRecentQuery(recentquery: RecentQuery) : boolean {
 
 The `deleteRecentQuery()` allows to delete a query from the user settings, based on the content of `query.text` (which should be unique, as explained [above](#crud-api-read)). The method also emits an event and updates the server, including an audit event.
 
-```ts
+```ts title="recent-queries.service.ts"
 /**
  * Deletes the given RecentQuery (based on its query.text)
  * Emits an RecentQuery event.
@@ -281,7 +281,7 @@ public deleteRecentQuery(recentquery: RecentQuery) : boolean {
 
 This private method is used by `addRecentQuery()` and `deleteRecentQuery()` to patch the user settings on the server, via the `UserSettingsWebService.patch()` method.
 
-```ts
+```ts title="recent-queries.service.ts"
 /**
  * Updates Recent Queries in User settings.
  * @param auditEvents : Audit Events to be triggered
@@ -304,7 +304,7 @@ private patchRecentQueries(auditEvents: AuditEvents = null) {
 
 Your service can be a bit more than just a proxy to the `UserSettingsWebService`. In this case, we include a method to search a `RecentQuery` via the `SearchService` (if a user selects it in a facet for example).
 
-```ts
+```ts title="recent-queries.service.ts"
 /**
  * Uses the SearchService to perform a search returning all
  * the documents matching this recent query.

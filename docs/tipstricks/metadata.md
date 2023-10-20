@@ -26,13 +26,13 @@ let category: string = record['sourcestr1'];
 
 It is not the best practice to expose index column names in the front-end. You can assign an *alias* to this column, along with some useful *descriptors*. This is done in the administration under *Search-Based Applications > Web Services > Your query > **Advanced tab** > Column Aliases*.
 
-![Column alias](/assets/tipstricks/alias.png){: .d-block .mx-auto }
+![Column alias](/assets/tipstricks/alias.png)
 
 Now, your parameter is accessible under `record['category']`. The alias is used throughout the configuration of the SBA.
 
 While we are configuring the *Query*, we can also create an *aggregation* to feed our facet of categories. In the **General tab**, add a new line under the **Aggregations** table. Give it a meaningful name, like "Categories" and set the name of the column to your alias `category`. Optionally edit the configuration of your aggregation for more options:
 
-![Aggregation](/assets/tipstricks/aggregation.png){: .d-block .mx-auto }
+![Aggregation](/assets/tipstricks/aggregation.png)
 
 Read more about [aggregations](https://doc.sinequa.com/en.sinequa-es.v11/Content/en.sinequa-es.syntax.sql.md#aggregations-distribution-and-correlation) to configure these (optional) advanced parameters. Note that if you leave *Include in standard search* checked, it means the distribution will be computed along with any query, which may come with a performance cost.
 
@@ -40,7 +40,7 @@ Read more about [aggregations](https://doc.sinequa.com/en.sinequa-es.v11/Content
 
 Your application probably displays results in a for-loop. In [Hello Search](/apps/1-hello-search.md), it looks like this:
 
-```html
+```html title="app.component.html"
 <div *ngFor="let record of results.records" class="record">
     <a href="{{record.url1}}">
         <h3 [innerHtml]="record.displayTitle || record.title"></h3>
@@ -52,13 +52,13 @@ Your application probably displays results in a for-loop. In [Hello Search](/app
 
 You can directly display the value with something like:
 
-```html
+```html title="app.component.html"
 <span>{{ record['category'] }}</span>
 ```
 
 For something more sophisticated, which can include a *label* and an *icon*, you can try using the [Metadata component](/libraries/components/metadata.md#the-sq-metadata-selector):
 
-```html
+```html title="app.component.html"
 <sq-metadata
     [record]="record"
     [config]="metadata">
@@ -67,7 +67,7 @@ For something more sophisticated, which can include a *label* and an *icon*, you
 
 With a configuration like:
 
-```ts
+```ts title="app.component.ts"
 this.metadata: MetadataConfig[] = [
     {
         field: "category", // the field in the record
@@ -83,13 +83,13 @@ If this metadata is stored in the index in a format that needs to be processed t
 
 First of all, choose a name for the formatter, like `"prettifyCategory"`. Set this name in the "formatter" column in the **Advanced tab** of your **Query** configuration.
 
-![Custom formatter](/assets/tipstricks/metadata-formatter.png){: .d-block .mx-auto }
+![Custom formatter](/assets/tipstricks/metadata-formatter.png)
 
 This custom formatter needs to be implemented in your Angular application. This is done by overriding the `FormatService`. An example is provided in the documentation of the [App Utils modules](/libraries/core/app-utils.md#format-service).
 
 1. Create your extension of the `FormatService` in your app.
 
-    ```ts
+    ```ts title="my-format.service.ts"
     @Injectable({
         providedIn: 'root'
     })
@@ -100,7 +100,7 @@ This custom formatter needs to be implemented in your Angular application. This 
 
 2. Implement your custom formatter by overriding the `formatValue()` method. The `valueItem` input contains the raw value stored in the index, and the `column` contains the properties of the index column corresponding to each metadata.
 
-    ```ts
+    ```ts title="my-format.service.ts"
     // Add support for a custom formatter
     formatValue(valueItem: ValueItem | FieldValue, column?: CCColumn): string {
         if (column && column.formatter === 'prettifyCategory') {
@@ -113,7 +113,7 @@ This custom formatter needs to be implemented in your Angular application. This 
 
 3. In your `app.module.ts`, provide your custom `FormatService`:
 
-    ```ts
+    ```ts title="app.module.ts"
     @NgModule({
         ...,
         providers: [

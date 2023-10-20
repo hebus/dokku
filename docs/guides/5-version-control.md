@@ -2,7 +2,7 @@
 layout: default
 title: Version control
 parent: Guides
-nav_order: 5
+sidebar_position: 5
 ---
 
 # Version Control

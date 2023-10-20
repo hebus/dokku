@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contribute
-nav_order: 7
+sidebar_position: 7
 parent: Guides
 description: Why and how to contribute
 ---

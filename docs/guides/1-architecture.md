@@ -2,7 +2,7 @@
 layout: default
 title: Architecture
 parent: Guides
-nav_order: 1
+sidebar_position: 1
 ---
 
 # Architecture
