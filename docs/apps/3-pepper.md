@@ -9,7 +9,7 @@ nav_order: 3
 
 *Pepper* is a search & analytics app designed around a modular, interactive and collaborative dashboard.
 
-<iframe src="https://player.vimeo.com/video/534455071" width="100%" height="400px" frameborder="0" title="Pepper" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/534455071" width="100%" height="400px" frameBorder="0" title="Pepper"></iframe>
 *The Pepper SBA sample*
 
 Pepper has a single "search" route (which can easily replace the "search" route of Vanilla-Search if the "home" and "preview" routes are required).
@@ -20,7 +20,7 @@ Pepper has a single "search" route (which can easily replace the "search" route 
 
 The search form of Pepper is more advanced than the one of [Vanilla Search](2-vanilla-search.md). Because of the reduced "UI real estate" of the dashboard, the search form integrates the filters and facets in addition to the traditional autocomplete.
 
-![Pepper search form](/assets/apps/pepper-search-bar.png){: .d-block .mx-auto }
+![Pepper search form](/assets/apps/pepper-search-bar.png)
 
 This search form is composed of the following components:
 
@@ -51,7 +51,7 @@ Pepper includes the following widgets by default:
 
 The dashboard also allows you to open multiple **document previews** by clicking on documents from the result list. When the dashboard is reopened, these previews are fetched again from the Sinequa indexes.
 
-![Dashboard preview](/assets/modules/dashboard-preview.png){: .d-block .mx-auto }
+![Dashboard preview](/assets/modules/dashboard-preview.png)
 
 ## Architecture
 
@@ -290,7 +290,7 @@ ngOnChanges(changes: SimpleChanges) {
 
 The `width` and `height` inputs may also be used in the template. For example:
 
-{% raw %}
+
 
 ```html
 <svg width="{{width}}" height="{{height}}">
@@ -298,5 +298,5 @@ The `width` and `height` inputs may also be used in the template. For example:
 </svg>
 ```
 
-{% endraw %}
+
 

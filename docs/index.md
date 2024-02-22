@@ -29,8 +29,8 @@ The framework also includes the following **applications** built directly with t
 - [**Vanilla Builder**](/docs/apps/5-vanilla-builder.md) is a no-code application builder that lets Sinequa administrators customize the Vanilla Search user interface. It is a good way to get started with SBAs without having to learn technologies like Angular.
 - [**LLM Integration**](/docs/apps/6-llm-integration.md) is a sample integration for generative language models (such as GPT-4, powering [ChatGPT](https://openai.com/blog/chatgpt)) within the [Vanilla Search](/docs/apps/2-vanilla-search.md) application.
 
-<div class="text--center">
-  <iframe src="https://player.vimeo.com/video/534455071" width="100%" height="400px" frameborder="0" title="Pepper" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div className="text--center">
+  <iframe src="https://player.vimeo.com/video/534455071" width="100%" height="400px" frameBorder="0" title="Pepper"></iframe>
   <em>The Pepper SBA sample</em>
 </div>
 
@@ -45,7 +45,7 @@ Sinequa excels at **searching** and **extracting** information from **unstructur
 The platform integrates proprietary and open-source technologies to deliver top performance and relevance in **Search**, **Natural Language Processing** and **Deep Learning**. We provide rich and extensible User Interfaces with our Angular-based SBA framework. We release this framework as open source to give our customers more flexibility and to foster a worldwide community of developers.
 
 ![Sinequa platform](/assets/index/sinequa-platform.png)
-<div class="text--center">
+<div className="text--center">
   <em>Overview of the Sinequa platform</em>
 </div>
 

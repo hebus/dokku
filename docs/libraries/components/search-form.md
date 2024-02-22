@@ -14,7 +14,7 @@ This standalone component offers an input with a dropdown and many options such 
 
 ![Document metadata](/assets/modules/search-form.png)
 *Search Form Component in Vanilla Search*
-{: .text-center }
+
 
 ## Import
 
@@ -116,10 +116,10 @@ A more complex example could be what Pepper does which includes an `sq-filters-v
 </sq-search-form>
 ```
 
-![Pepper Search Form](/assets/modules/search-form/search-form-pepper.png){: .d-block .mx-auto }
+![Pepper Search Form](/assets/modules/search-form/search-form-pepper.png)
 *Pepper's Search Form*
-{: .text-center }
 
-![Pepper Search Form](/assets/modules/search-form/search-form-pepper-2.png){: .d-block .mx-auto }
+
+![Pepper Search Form](/assets/modules/search-form/search-form-pepper-2.png)
 *Upon selecting a filter category*
-{: .text-center }
+

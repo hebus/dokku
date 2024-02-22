@@ -12,7 +12,7 @@ sidebar_position: 17
 
 This module includes a single sample component which displays a menu letting a user send feedback to the administrator of the Sinequa server. This feedback is collected via the audit index and needs to be displayed in an **audit report**. ⚠️ No email is sent to anyone automatically.
 
-![Feedback menu](/assets/modules/feedback/menu.png){: .d-block .mx-auto }
+![Feedback menu](/assets/modules/feedback/menu.png)
 
 ## Import
 
@@ -61,12 +61,12 @@ The comments can be displayed in an **audit report**, in various steps:
 
 1. Define a query to fetch the user comments:
 
-    ![Audit queries](/assets/modules/feedback/audit-query.png){: .d-block .mx-auto }
+    ![Audit queries](/assets/modules/feedback/audit-query.png)
 
 2. Define a new section in the "Parameters":
 
-    ![Audit parameters](/assets/modules/feedback/audit-param.png){: .d-block .mx-auto }
+    ![Audit parameters](/assets/modules/feedback/audit-param.png)
 
 3. The audit events are now visible in the audit report:
 
-    ![Audit report](/assets/modules/feedback/audit-report.png){: .d-block .mx-auto }
+    ![Audit report](/assets/modules/feedback/audit-report.png)

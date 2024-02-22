@@ -9,7 +9,7 @@ description: "Get started with the SBA Framework"
 
 The SBA Framework is used in a variety of contexts by both technical and non-technical people. This section presents different approaches to getting started, depending on your role and overall objectives.
 
-In this documentation, we make the assumption that you are a Sinequa customer or partner and that you can access a Sinequa server in your organization (or at the very least that you can connect to our [training server](https://vm-su-sba.sinequa.com:13343), using your provided Sinequa credentials).
+In this documentation, we make the assumption that you are a Sinequa customer or partner and that you can access a Sinequa server in your organization (or at the very least that you can connect to our [training server](https://su-sba.demo.sinequa.com), using your provided Sinequa credentials).
 
 ## Browse sample applications and components
 
@@ -37,11 +37,11 @@ Another common way to get started is to copy one of the pre-packaged apps availa
 
 However, please note the following warnings:
 
-:::caution
+:::warning
 Copying the "app" object exposes a new application at the URL `<sinequa>/app/<app-name>`, but **it does not copy the application's workspace**, which contains the source code and build artifacts for the app. The new app will still be referencing the original workspace (See [server configuration](guides/2-server-config.md)).
 :::
 
-:::caution
+:::warning
 While it is possible to copy the workspace as well, you should carefully consider Version Control and Continuous Integration for the long-term maintainability of your project (See our [Version Control](guides/5-version-control.md) and [Updates](guides/6-updates.md) guides).
 :::
 
@@ -112,7 +112,7 @@ If you manage an existing application, you typically have to perform different t
   - Library upgrades (Angular, Bootstrap, RxJS, D3, etc.) often introduce breaking changes. So when Sinequa upgrades these libraries, the entire codebase is migrated accordingly.
   - As the SBA Framework evolves, bugs are fixed, features are added, and components & applications are refactored. These changes can be in direct conflict with how you use these components or how you customized these components.
 
-  :::caution
+  :::warning
   If your application is heavily customized, these updates will probably be difficult. If your customization makes use of, say, Bootstrap, you will have to follow the relevant guide from Bootstrap to migrate your code.
   :::
 

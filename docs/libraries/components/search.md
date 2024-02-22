@@ -171,7 +171,6 @@ This components requires at least a `Results` input to work properly.
 <sq-sort-selector [results]="results"></sq-sort-selector>
 ```
 
-<!-- <doc-sort-selector></doc-sort-selector> -->
 
 ### Pager
 
@@ -185,7 +184,6 @@ This components requires at least a `Results` input to work properly.
 <sq-pager [results]="results"></sq-pager>
 ```
 
-<!-- <doc-pager></doc-pager> -->
 
 ### Loading bar
 
@@ -203,7 +201,6 @@ Results comes from `SearchService.resultsStream` and requires no mandatory input
 <sq-load-more></sq-load-more>
 ```
 
-<!-- <doc-load-more></doc-load-more> -->
 
 ### Lazy-loading results while scrolling down
 
@@ -217,7 +214,6 @@ We are using the [`Observer API`](https://developer.mozilla.org/en-US/docs/Web/A
 <sq-scroller></sq-scroller>
 ```
 
-<!-- <doc-scroller></doc-scroller> -->
 
 ### Scope selector
 
@@ -245,6 +241,5 @@ A complete implementation could look like this:
 </sq-scope>
 ```
 
-<!-- <doc-scope></doc-scope> -->
 
 (Note that, unlike with the tabs, the query web service does not support counting the number of elements in each scope for a given query. Therefore, scopes could be displayed in the form of tabs, but without tab counters.)

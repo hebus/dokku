@@ -41,7 +41,7 @@ See more details about the supported filters in the [documentation of the Query 
 
 The filters would then be represented by the following tree (in the `sq-filters-editor` component):
 
-![Filters Editor](/assets/modules/filters/filters-editor.png){: .d-block .mx-auto }
+![Filters Editor](/assets/modules/filters/filters-editor.png)
 
 ## Import
 

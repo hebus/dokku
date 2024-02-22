@@ -6,7 +6,7 @@ parent: Releases
 ---
 
 
-[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.6.1){:.d-block .text-right }
+[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.6.1)
 
 - Multiple optimizations and bug fixes of the **document navigator** and **preview** module:
   - Improved navigation in the list of extracts

@@ -19,15 +19,15 @@ It is also pre-filled with the default web services.
 - If you want to use a different **Query** web service other than the default one, click *Edit*, and in the list of Queries,
 choose your web service and save.
 
-<div class="margin-horiz--xl">
+<div className="margin-horiz--xl">
   <img
     src={require('/assets/gettingstarted/admin-new-angular-app-action.png').default}
     alt="New Angular app action"
   />
 </div>
-<p class="text--center">
+<div className="text--center">
   <em>'New Angular app' action in Apps</em>
-</p>
+</div>
 
 At this point, your Sinequa server can be used to develop an SBA, and you can start the [development guide](3-development.md) or spend more time reading the documentation below to learn more about fully configuring the server.
 
@@ -41,9 +41,9 @@ Finally, the App can be restricted to specific **Users and Groups**, rather than
 The list of Apps can be found in the administration interface under *Search-Based Applications > Apps*:
 
 ![List of Apps](/assets/gettingstarted/admin-apps.png)
-<p class="text--center">
+<div className="text--center">
   <em>List of applications in the Sinequa server administration</em>
-</p>
+</div>
 
 In this form, a new App may be created by clicking on the *New Angular App* button.
 
@@ -52,9 +52,9 @@ The configuration of an App specifies the **list of Web Services** available for
 If the App is deployed on the Sinequa server, it needs to point to an **Angular workspace**, which is shown via the property *Workspace application*.
 
 ![App Configuration](/assets/gettingstarted/admin-app.png)
-<p class="text--center">
+<div className="text--center">
   <em>App configuration - General tab</em>
-</p>
+</div>
 
 
 In the **Customization (JSON)** tab of the App configuration, it is possible to write data (in JSON syntax),
@@ -68,12 +68,12 @@ The underlying Monaco editor can verify that your JSON is valid and in any case,
 when saving the App configuration and notifies you should the JSON be not valid.
 
 ![Customization tab](/assets/gettingstarted/admin-app-conf.png)
-<p class="text--center">
+<div className="text--center">
   <em>App configuration - Customization (JSON) tab</em>
-</p>
+</div>
 
 ![Customization tab with error](/assets/gettingstarted/admin-app-conf-with-error.png)
-<p class="text--center"><em>App configuration - Customization (JSON) tab - when the JSON is not valid</em></p>
+App configuration - Customization (JSON) tab - when the JSON is not valid
 
 Please refer to [Tips & tricks - Server-side-configuration](/docs/tipstricks/configuration.md#server-side-configuration) for an example of how to use the JSON data to customize vanilla-search.
 
@@ -82,7 +82,7 @@ You can also assign the current App configuration as the default Angular app for
 This default Angular app is used when the assigned user navigates on the Sinequa server without specifying the app that they want to use.
 
 ![Advanced tab](/assets/gettingstarted/admin-app-sec.png)
-<p class="text--center"><em>App configuration - Advanced tab</em></p>
+App configuration - Advanced tab
 
 
 ## Web Services
@@ -95,7 +95,7 @@ The **Web Services** configurations allow you to configure the behaviour of cert
 The list of Web Services can be found in the administration interface under *Search-Base Applications > Web Services*
 
 ![Advanced tab](/assets/gettingstarted/admin-ws.png)
-<p class="text--center"><em>List of <strong>configurable</strong> Web Services in the Sinequa server administration</em></p>
+List of **configurable** Web Services in the Sinequa server administration
 
 ### Query web service (default: *_query*)
 
@@ -111,7 +111,7 @@ The **General** tab of the Query web service configuration allows the configurat
 For example, if you search for "automobile manufacturer", the *Company* aggregation could contain entries like "Volkswagen", "BMW", "Tesla", etc.
 
 ![Query Web Service configuration - General tab](/assets/gettingstarted/admin-query.png)
-<p class="text--center"><em>Query Web Service configuration - General tab</em></p>
+Query Web Service configuration - General tab
 
 
 The **Results Page** tab of the Query web service configuration allows to configure these key parameters:
@@ -125,7 +125,7 @@ Unlike tabs, it is not possible to compute the number of documents for each scop
 - **Relevant Extracts**: The relevant extracts are key passages and sentences found in the searched documents, which are then used to compute a short summary typically displayed in the search results.
 
 ![Relevant extracts](/assets/gettingstarted/relevant-extracts.png)
-<p class="text--center"><em>Example of relevant extracts</em></p>
+Example of relevant extracts
 
 The **Search settings** tab of the Query web service configuration allows to configure in fine detail the query sent to the Sinequa engine.
 In particular:
@@ -158,7 +158,7 @@ This is useful to avoid exposing the bare structure of the index to front-end de
 Instead, developers will see and use explicit variable names, which are used consistently across the different web services.
 
 ![Aliases](/assets/gettingstarted/admin-query-aliases.png)
-<p class="text--center"><em>Example of query aliases</em></p>
+Example of query aliases
 
 ### Preview web service (default: *_preview*)
 
@@ -175,10 +175,10 @@ For example, relevant extracts are highlighted by wrapping `<span>` tags around 
 The visual highlight itself is effectively done by the aforementioned `preview.css` file (for example with a CSS rule of the type `background-color: yellow;`).
 
 ![Preview configuration](/assets/gettingstarted/admin-preview.png)
-<p class="text--center"><em>Example of preview configuration</em></p>
+Example of preview configuration
 
 ![highlights](/assets/gettingstarted/highlights.png)
-<p class="text--center"><em>Example of a highlighted HTML (each colored passage corresponds to a &lt;span&gt; element with a specific highlighted entity class)</em></p>
+Example of a highlighted HTML (each colored passage corresponds to a &lt;span&gt; element with a specific highlighted entity class)
 
 ### Labels web service (default: *_labels*)
 
@@ -191,7 +191,7 @@ It is possible to restrict specific actions (Label creation, label modification)
 This service also exposes an auto-complete feature to easily search and select a specific label.
 
 ![Labels configuration](/assets/gettingstarted/admin-labels.png)
-<p class="text--center"><em>Example of labels configuration</em></p>
+Example of labels configuration
 
 ### Auto-complete web service (default: *_autocomplete*)
 
@@ -201,7 +201,7 @@ Refer to the [documentation](https://doc.sinequa.com/en.sinequa-es.v11/Content/e
 The last option "Match the search terms anywhere in field values" is useful for the facet component's search bar: A search for "York" will match both "New York" and "Yorkshire" values. However this option comes incurs a performance penalty, so it should be used only when necessary.
 
 ![Autocomplete configuration](/assets/gettingstarted/admin-autocomplete.png)
-<p class="text--center"><em>Example of auto-complete configuration</em></p>
+Example of auto-complete configuration
 
 ### Export web service (default: *_queryexport*)
 
@@ -216,7 +216,7 @@ In particular, the query configuration can limit the maximum number of records p
 You need to verify such options in the query web service when you change the maximum number of lines in the export web service.
 
 ![Export configuration](/assets/gettingstarted/admin-export.png)
-<p class="text--center"><em>Example of export configuration</em></p>
+Example of export configuration
 
 ### Sponsored links service (default: *_sponsoredlinks*)
 
@@ -224,7 +224,7 @@ The configuration of the sponsored links specifies the number of links returned 
 Refer to the [documentation](https://doc.sinequa.com/en.sinequa-es.v11/Content/en.sinequa-es.admin-ui-sponsored-links.html) on sponsored links for more information.
 
 ![Sponsored links configuration](/assets/gettingstarted/admin-sponsored-links.png)
-<p class="text--center"><em>Example of Sponsored links configuration</em></p>
+Example of Sponsored links configuration
 
 ## Workspaces
 
@@ -239,7 +239,7 @@ The workspaces are located in `<Sinequa data folder>\sba`, which is where Sinequ
 The **Workspaces** section displays the workspaces under `<Sinequa data folder>\sba`. It is located in the administration under *Search-Based Applications > Workspaces*:
 
 ![Workspaces](/assets/gettingstarted/admin-workspaces.png)
-<p class="text--center"><em>Angular workspaces in the administration</em></p>
+Angular workspaces in the administration
 
 At the start, there will be no workspace pre-loaded in Sinequa ES.
 You can:
@@ -253,18 +253,18 @@ You can:
 To unzip the default Sinequa workspace, click **New > Unzip default Angular workspace**
 
 ![Unzip default Angular workspace](/assets/gettingstarted/admin-unzip-default-angular-workspace.png)
-<p class="text--center"><em>'Unzip default Angular workspace' action</em></p>
+'Unzip default Angular workspace' action
 
 You will be prompted to choose a name for your workspace.
 This process can take a few minutes.
 You can follow its progress either by looking at the banner on the top of Workspaces administration page or by going to **Tasks status** page, the progress status is named **UnzipAngularWorkspace**.
 
 ![Unzip Angular workspace process status](/assets/gettingstarted/admin-unzip-angular-workspace-status.png)
-<p class="text--center"><em>Status of 'Unzip default Angular workspace' action in Tasks status</em></p>
+Status of 'Unzip default Angular workspace' action in Tasks status
 
 ### Upload your Angular workspace to Sinequa ES
 
-:::caution **IMPORTANT:**
+:::warning **IMPORTANT:**
 
 Please verify with the administrator of your Sinequa server that the size of your zip does not exceed the upload size limit of the server.
 If it is the case, the server will refuse the upload request with HTTP 413 (Request Entity Too Large).
@@ -282,7 +282,7 @@ To import your workspace, click **New > Import Angular workspace**
 
 ![Import Angular workspace](/assets/gettingstarted/admin-import-angular-workspace.png)
 *'Import Angular workspace' action*
-{: .text-center }
+
 
 A wizard will be shown to guide you through the import procedure.
 
@@ -292,19 +292,19 @@ If you want to overwrite an existing workspace, remember to tick the checkbox **
 Otherwise, the wizard will not let you continue with the import procedure.
 
 ![Import Angular workspace wizard - page 1](/assets/gettingstarted/admin-import-wiz-1.PNG)
-<p class="text--center"><em>'Import Angular workspace' wizard - page 1</em></p>
+'Import Angular workspace' wizard - page 1
 
 Once you have finished, click on **Next**.
 The next page provides you a summary of the steps that will be executed to import your workspace.
 
 ![Import Angular workspace wizard - page 2](/assets/gettingstarted/admin-import-wiz-2.PNG)
-<p class="text--center"><em>'Import Angular workspace' wizard - page 2</em></p>
+'Import Angular workspace' wizard - page 2
 
 Click on **Next** when you are ready to begin the import procedure.
 The import can take some time, once it is complete you can click on the **Finish** button to view the newly-imported workspace.
 
 ![Import Angular workspace wizard - page 3 - Finish](/assets/gettingstarted/admin-import-wiz-3.PNG)
-<p class="text--center"><em>'Import Angular workspace' wizard - page 3 - Finish</em></p>
+'Import Angular workspace' wizard - page 3 - Finish
 
 ### Workspace
 
@@ -321,7 +321,7 @@ You can follow the generation progress either by looking at the banner on the to
 Note that if your workspace does not contain a `node_modules` folder, only the generation action and entry of the minimal zip are shown.
 
 ![Workspace generate zip actions](/assets/gettingstarted/admin-workspace-generate-download-zip.png)
-<p class="text--center"><em>Workspace - Generate zip actions and download link</em></p>
+Workspace - Generate zip actions and download link
 
 Secondly, there is a list of all build scripts declared in the `package.json` file at the root of the workspace.
 You can execute the build script directly in the grid or from the `Build` menu at the top-right of the administration page.
@@ -329,25 +329,25 @@ You can execute the build script directly in the grid or from the `Build` menu a
 You can follow the script progress either by looking at the banner on the top of Workspaces administration page or by going to **Tasks status** page, the progress status is named **BuildAngularWorkspace**.
 
 ![Workspace build scripts](/assets/gettingstarted/admin-workspace-build-scripts.png)
-<p class="text--center"><em>Workspace - Build scripts</em></p>
+Workspace - Build scripts
 
 The build commands write their result to either `/dist` or `/dist-debug` depending on the configuration of the Angular workspace.
 This is where Sinequa looks for when serving a particular application.
 Obviously, the Angular app needs to be built in order to be served...
 
 ![Serving an app](/assets/gettingstarted/admin-serving.png)
-<p class="text--center"><em>When the app is hosted on Sinequa, the URL contains the name of the App, which itself points to a specific workspace and app</em></p>
+When the app is hosted on Sinequa, the URL contains the name of the App, which itself points to a specific workspace and app
 
 Finally, you can browse the content of workspace folder and that of its files or sub-folders.
 Note that the contents of the `node_modules` folder are not shown in the administration due to their size
 
 ![Workspace content](/assets/gettingstarted/admin-workspace-content.png)
-<p class="text--center"><em>Workspace - Content</em></p>
+Workspace - Content
 
 If there is a `README` markdown file in the workspace root, this file is also rendered at the end of the workspace page.
 
 ![Workspace readme](/assets/gettingstarted/admin-workspace-readme.png)
-<p class="text--center"><em>Workspace - README</em></p>
+Workspace - README
 
 ### Other actions with workspace
 
@@ -357,13 +357,13 @@ By default, this action is disabled on the administration. You need to activate 
 You can follow the execution of the `npm install` action either by looking at the banner on the top of Workspaces administration page or by going to **Tasks status** page, the progress status is named **ExecuteNpmInstallAngularWorkspace**.
 
 ![Workspace execute npm install](/assets/gettingstarted/admin-workspace-execute-npm-install.png)
-<p class="text--center"><em>Workspace - Execute 'npm install' action</em></p>
+Workspace - Execute 'npm install' action
 
 From the workspace administration, you can create an App configuration based on one of the application project of the workspace.
 To create a new App, go to **More actions > New app from**, where you can choose the base project for the App.
 
 ![Workspace new ap](/assets/gettingstarted/admin-workspace-new-app.png)
-<p class="text--center"><em>Workspace - New app actions</em></p>
+Workspace - New app actions
 
 ## CORS and WebApp configuration
 

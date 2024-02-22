@@ -18,7 +18,7 @@ This module includes a sample Timeline visualization for dates and events, based
 
 The module only includes one component, which can be used as is, or more probably taken as a starting point for further development using the Vis library API.
 
-![Timeline](/assets/modules/vis-timeline/timeline.png){: .d-block .mx-auto }
+![Timeline](/assets/modules/vis-timeline/timeline.png)
 
 ## Import
 
@@ -53,7 +53,6 @@ In any case you will also need to import the following stylesheet in your app's 
 
 ## Timeline Component
 
-<!-- <doc-result-timeline></doc-result-timeline> -->
 
 ### Basic usage
 

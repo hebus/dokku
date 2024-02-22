@@ -60,7 +60,7 @@ const routes: Routes = [
 
 With this in place, you should notice the *Lazy chunk files*, while compiling your application. Those are simply referring to our lazy loaded module
 
-![Lazy loading preview](/assets/tipstricks/lazy-loading.PNG){: .d-block .mx-auto }
+![Lazy loading preview](/assets/tipstricks/lazy-loading.PNG)
 
 
 ## Module Federation
@@ -171,7 +171,7 @@ declare module 'mfe/Module';
 
 Once starting both applications side by side (`ng serve shell` and `ng serve mfe`), you should notice, **at runtime**, that shell loads the mfe from its own URL
 
-![Loading remotes](/assets/tipstricks/loading-remote.PNG){: .d-block .mx-auto }
+![Loading remotes](/assets/tipstricks/loading-remote.PNG)
 
 ### Dynamic federation
 

@@ -5,7 +5,7 @@ sidebar_position: 106
 parent: Releases
 ---
 
-[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.6.0){:.d-block .text-right }
+[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.6.0)
 
 - General refactoring of the SBA libraries:
   - The **@sinequa/components** library has been refactored as 2 libraries (**@sinequa/components** and **@sinequa/analytics**). The new analytics library contains the most advanced components from the former library (charts, heatmap, network, map, timeline), and we will keep developing new modules featuring similar advanced integrations.

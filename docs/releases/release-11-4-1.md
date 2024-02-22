@@ -6,7 +6,7 @@ parent: Releases
 ---
 
 
-[See on Github](https://github.com/sinequa/sba-angular/releases/tag/1.1.1){:.d-block .text-right }
+[See on Github](https://github.com/sinequa/sba-angular/releases/tag/1.1.1)
 
 This update brings many small improvements and bug fixes to the SBA framework.
 

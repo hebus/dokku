@@ -16,7 +16,7 @@ This module is an integration of the [FusionCharts](https://www.fusioncharts.com
 
 This module includes few components which expose a limited sample of the [FusionChart](https://www.fusioncharts.com/angular2-js-charts?framework=angular2) functionalities. The FusionCharts library includes many rich and configurable charts which are not covered (see [advanced customization](#advanced-customization) below).
 
-![Chart](/assets/modules/fusioncharts/chart.png){: .d-block .mx-auto }
+![Chart](/assets/modules/fusioncharts/chart.png)
 
 ## Import
 
@@ -59,7 +59,7 @@ For example:
 
 Displays the following:
 
-![doughnut](/assets/modules/fusioncharts/doughnut3d.png){: .d-block .mx-auto }
+![doughnut](/assets/modules/fusioncharts/doughnut3d.png)
 
 ⚠️ We actually do not recommend using Pie or Doughtnut charts to display long-tail aggregations as in the example, since it can be misleading: Only the top ten values are displayed here, but the chart looks as if all these values make up 100% of the data.
 
@@ -73,7 +73,7 @@ The component also accepts an input `aggregations`, which is the list of names o
 </sq-facet-card>
 ```
 
-![Aggregations](/assets/modules/fusioncharts/aggregations.png){: .d-block .mx-auto }
+![Aggregations](/assets/modules/fusioncharts/aggregations.png)
 
 ### Width and Height
 
@@ -106,11 +106,10 @@ By default, a FusionCharts theme is used (it can be modified using the above [ch
 - `filteredColor` (default: `#C3E6CB`): Displays the *filtered* items (items that have been clicked on to filter the results) in a distinctive color.
 - `selectedColor` (default: `#8186d4`): Displays the items that belong to a *selected document* (managed by the `SelectionService` - see [Selection Module](/docs/libraries/components/selection.md)) in a distinctive color.
 
-![Custom colors](/assets/modules/fusioncharts/colors.png){: .d-block .mx-auto }
+![Custom colors](/assets/modules/fusioncharts/colors.png)
 
 ## MultiLevelPieChart Component
 
-<!-- <doc-multi-level-pie-chart></doc-multi-level-pie-chart> -->
 
 The `sq-multi-level-pie-chart` component displays a special type of chart that allows you to show symmetrical and asymmetrical tree structures in a consolidated pie-like structure. It presents the entire hierarchical data in a single-screen snapshot, which makes it a preferred choice over a tree view.
 
@@ -144,7 +143,7 @@ Its most basic usage is as follow:
 
 Which displays the following
 
-![Chart](/assets/modules/fusioncharts/multi-level-pie.PNG){: .d-block .mx-auto }
+![Chart](/assets/modules/fusioncharts/multi-level-pie.PNG)
 
 ### Custom data
 

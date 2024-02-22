@@ -16,7 +16,7 @@ This module is an integration of the [Angular Google Maps](https://github.com/an
 
 This Sinequa module wraps this component and uses it to display geolocated records from the Sinequa index. The component needs the records to have mono-valued latitude and longitude fields.
 
-![Chart](/assets/modules/googlemaps/map.png){: .d-block .mx-auto }
+![Chart](/assets/modules/googlemaps/map.png)
 
 ## Import
 
@@ -50,7 +50,6 @@ const messages = Utils.merge({}, ..., enGooglemaps, appMessages);
 
 ## Map component
 
-<!-- <doc-map></doc-map> -->
 
 The map component is a facet component (See [Facet Module](//libraries/components/facet.html)), which means it is best used when integrated in a facet card:
 
@@ -70,7 +69,7 @@ The component looks through the list of records (`results.records`), filtering g
 
 The component displays each geolocated record as a pin on the map, and automatically tries to fit the viewport to these pins. When the user clicks on a pin, an info-window is displayed with the title of that document, and an event is emitted with the corresponding `Record` object.
 
-![Info window](/assets/modules/googlemaps/infowindows.png){: .d-block .mx-auto }
+![Info window](/assets/modules/googlemaps/infowindows.png)
 
 This event can be captured by the parent:
 
@@ -80,7 +79,7 @@ This event can be captured by the parent:
 
 Finally, the component displays a "Filter" action in the facet header. When clicked, a selection is created to filter documents falling inside the current bounds of the map.
 
-![Filter](/assets/modules/googlemaps/filter.png){: .d-block .mx-auto }
+![Filter](/assets/modules/googlemaps/filter.png)
 
 The selection is expressed as a simple rectangle:
 

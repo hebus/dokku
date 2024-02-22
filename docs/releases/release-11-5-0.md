@@ -5,7 +5,7 @@ sidebar_position: 107
 parent: Releases
 ---
 
-[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.5.0){:.d-block .text-right }
+[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.5.0)
 
 - Migration to Angular 11. The migration is relatively easy. For customer applications, make sure to apply the following change in angular.json: replace  "lazy": true  by  "inject": false (this change is already done for Vanilla Search). Some application-level configuration files also change (tsconfig.ts): In customer applications these files must be aligned with the ones in Vanilla Search. Note that with this new configuration, ng serve captures changes in the core and components libraries (ie. no need to wait for the libraries to recompile when working on a packaged component).
 - The autocomplete supports Fielded Search with a graphical mode (colored badges in the search bar) or advanced mode (text-based, supporting boolean expressions)

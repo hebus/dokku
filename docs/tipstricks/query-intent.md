@@ -170,7 +170,7 @@ With the example above we display a tag-cloud with terms related to a person. Th
 
 ![Query intent people](/assets/tipstricks/queryintents-people.png)
 _Result of searching "who is Barack Obama?"_
-{: .text-center}
+
 
 ### Example 2: Automatic filters
 
@@ -270,4 +270,4 @@ This component is displayed only when the `QueryIntentService` has detected `for
 
 ![Query intent formats](/assets/tipstricks/queryintents-formats.png)
 _Result of searching "code civil pdf"_
-{: .text-center}
+

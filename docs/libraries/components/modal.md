@@ -81,7 +81,7 @@ which yields the following popup
 
 ![New saved query popup](/assets/modules/modal/modal-new-saved-query.png)
 *New saved query popup*
-{: .text-center }
+
 
 The input of the components are
 

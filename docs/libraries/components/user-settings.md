@@ -58,11 +58,10 @@ const messages = Utils.merge({}, ..., enAlerts, enBaskets, enSavedQueries, appMe
 
 ### User Menu
 
-<!-- <doc-saved-queries-menu></doc-saved-queries-menu> -->
 
 The `sq-saved-queries-menu` component displays the list of saved queries, lets a user save his current query and allows to reorganize the list (See the *Manage* modal below).
 
-![Saved queries menu](/assets/modules/user-settings/saved-queries-menu.png){: .d-block .mx-auto }
+![Saved queries menu](/assets/modules/user-settings/saved-queries-menu.png)
 
 This menu is meant to be inserted in a Bootstrap-styled navbar:
 
@@ -75,11 +74,10 @@ This menu is meant to be inserted in a Bootstrap-styled navbar:
 
 ### Facet
 
-<!-- <doc-facet-saved-queries></doc-facet-saved-queries> -->
 
 The `sq-facet-saved-queries` component displays the list of saved queries, lets a user re-play one of them, open the *Manage* modal (see below), or delete specific queries.
 
-![Saved queries facet](/assets/modules/user-settings/saved-queries-facet.png){: .d-block .mx-auto }
+![Saved queries facet](/assets/modules/user-settings/saved-queries-facet.png)
 
 This facet is meant to work with the `sq-facet-card` component (See [Facet Module](facet.md)):
 
@@ -107,9 +105,9 @@ Additional methods allow to display modal dialogs:
 - `manageSavedQueriesModal()` displays the `sq-manage-saved-queries` modal component which displays the list of queries and lets the user reorganize it (change the order, remove or rename elements)
 - `exportModal()` displays the `sq-export-query` modal component which allows to export a saved query or a list of results.
 
-![Manage saved queries modal](/assets/modules/user-settings/manage-saved-queries.png){: .d-block .mx-auto width="350px" }
+![Manage saved queries modal](/assets/modules/user-settings/manage-saved-queries.png)
 *Manage Modal component to reorder, rename or delete saved queries*
-{: .text-center }
+
 
 ## Recent Queries
 
@@ -117,11 +115,10 @@ Additional methods allow to display modal dialogs:
 
 ### Facet
 
-<!-- <doc-facet-recent-queries></doc-facet-recent-queries> -->
 
 The `sq-facet-recent-queries` component displays the list of recent queries and lets a user re-play, delete or save one of them.
 
-![Recent queries facet](/assets/modules/user-settings/recent-queries-facet.png){: .d-block .mx-auto }
+![Recent queries facet](/assets/modules/user-settings/recent-queries-facet.png)
 
 This facet is meant to work with the `sq-facet-card` component (See [Facet Module](facet.md)):
 
@@ -150,11 +147,10 @@ The `RecentQueriesService` is the access point for the list of recent queries (`
 
 ### Facet
 
-<!-- <doc-facet-recent-documents></doc-facet-recent-documents> -->
 
 The `sq-facet-recent-documents` component displays the list of recent document and lets a user re-open one, or remove it from the list.
 
-![Recent documents facet](/assets/modules/user-settings/recent-documents-facet.png){: .d-block .mx-auto }
+![Recent documents facet](/assets/modules/user-settings/recent-documents-facet.png)
 
 This facet is meant to work with the `sq-facet-card` component (See [Facet Module](facet.md)):
 
@@ -182,11 +178,10 @@ The `RecentDocumentsService` is the access point for the list of recent document
 
 ### User Menu
 
-<!-- <doc-alerts-menu></doc-alerts-menu> -->
 
 The `sq-alerts-menu` component displays the list of alerts, lets a user schedule an alert for the current query and allows to reorganize the list (See the *Manage* modal below).
 
-![Alerts menu](/assets/modules/user-settings/alerts-menu.png){: .d-block .mx-auto }
+![Alerts menu](/assets/modules/user-settings/alerts-menu.png)
 
 This menu is meant to be inserted in a Bootstrap-styled navbar:
 
@@ -207,9 +202,9 @@ Additional methods allow to display modal dialogs:
 - `editAlertModal()` displays the `sq-edit-alert` modal component (same as above) which allows to edit the parameters of an existing alert.
 - `manageAlertsModal()` displays the `sq-manage-alerts` modal component which displays the list of alerts and lets the user reorganize it (change the order, remove or rename elements). This component is similar to the `sq-manage-saved-queries` component.
 
-![Alerts modal](/assets/modules/user-settings/alerts-modal.png){: .d-block .mx-auto width="350px" }
+![Alerts modal](/assets/modules/user-settings/alerts-modal.png)
 *Edit/Create Modal component for alerts*
-{: .text-center }
+
 
 ## Baskets
 
@@ -250,6 +245,6 @@ Additional methods allow to display modal dialogs:
 - `createBasketModal()` displays the `sq-edit-basket` modal component which allows to create a basket after giving it a name.
 - `manageBasketsModal()` displays the `sq-manage-baskets` modal component which displays the list of baskets and lets the user reorganize it (change the order, remove or rename elements). This component is similar to the `sq-manage-saved-queries` component.
 
-![Baskets modal](/assets/modules/user-settings/baskets-select.png){: .d-block .mx-auto width="350px" }
+![Baskets modal](/assets/modules/user-settings/baskets-select.png)
 *Select Modal to add or remove a document to/from a basket*
-{: .text-center }
+

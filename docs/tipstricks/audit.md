@@ -77,7 +77,7 @@ The `AuditEvent` interface is very flexible as it requires:
 - A `type`, which can be a standard type (among those listed in the `AuditEventType`) or a custom `string`.
 - A `detail` field, which is a simple key-value map, where the keys correspond to columns of the audit index (of course, these columns must exist in the audit index schema, which can be customized).
 
-    ![Audit schema](/assets/tipstricks/audit-schema.png){: .d-block .mx-auto }
+    ![Audit schema](/assets/tipstricks/audit-schema.png)
 
 Therefore, emitting a custom standalone event is as simple as the following example:
 

@@ -14,9 +14,9 @@ This module provides components to add collapsible panels to your components as 
 
 One of the usages of this module is the collapse/expand functionality of the facets (with `collapsible = true`).
 
-![Collapse functionality in facet](/assets/modules/collapse/collapse-facet-example.png){: .d-block .mx-auto }
+![Collapse functionality in facet](/assets/modules/collapse/collapse-facet-example.png)
 *Collapse functionality in facet*
-{: .text-center }
+
 
 ## Import
 

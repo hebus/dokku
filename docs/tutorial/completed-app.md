@@ -9,7 +9,7 @@ sidebar_position: 11
 
 Here is for reference, the source code of the application, at the end of the tutorial (empty files are ignored).
 
-## App module `src/app/app.module.ts`
+## App module
 
 ```ts title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -142,7 +142,7 @@ export class AppModule {
 
 ## App Component
 
-### Controller `src/app/app.component.ts`
+### Controller
 
 ```ts title="app.component.ts"
 import {Component, AfterViewInit} from "@angular/core";
@@ -180,7 +180,7 @@ export class AppComponent implements AfterViewInit {
 }
 ```
 
-### Template `src/app/app.component.html`
+### Template
 
 ```html title="app.component.html"
 <router-outlet></router-outlet>
@@ -198,7 +198,7 @@ export class AppComponent implements AfterViewInit {
 </ng-container>
 ```
 
-### Styles `src/app/app.component.scss`
+### Styles
 
 ```scss title="app.component.scss"
 .notification {
@@ -213,7 +213,7 @@ export class AppComponent implements AfterViewInit {
 
 ## Home Component
 
-### Controller `src/app/home/home.component.ts`
+### Controller
 
 ```ts title="home.component.ts"
 import { Component, OnInit } from '@angular/core';
@@ -233,7 +233,7 @@ export class HomeComponent implements OnInit {
 }
 ```
 
-### Template `src/app/home/home.component.html`
+### Template
 
 ```html title="home.component.html"
 <div class="vh-100 w-100 d-flex flex-column justify-content-center align-items-center">
@@ -246,7 +246,7 @@ export class HomeComponent implements OnInit {
 
 ## Search Component
 
-### Controller `src/app/search/search.component.ts`
+### Controller
 
 ```ts title="search.component.ts"
 import { Component } from "@angular/core";
@@ -305,7 +305,7 @@ export class SearchComponent {
 }
 ```
 
-### Template `src/app/search/search.component.html`
+### Template
 
 ```html title="search.component.html"
 <div class="search container">
@@ -374,7 +374,7 @@ export class SearchComponent {
 </div>
 ```
 
-### Styles `src/app/search/search.component.scss`
+### Styles
 
 ```scss title="search.component.scss"
 .search {
@@ -412,7 +412,7 @@ sq-facet-card {
 
 ## Autocomplete component
 
-### Controller `src/app/autocomplete.ts`
+### Controller
 
 ```ts title="autocomplete.ts"
 
@@ -470,7 +470,7 @@ export class Autocomplete implements OnChanges, OnInit {
 
 ## Search form component
 
-### Controller `src/app/search-form/search-form.component.ts`
+### Controller
 
 ```ts title="search-form.component.ts"
 import { Component } from '@angular/core';
@@ -488,7 +488,7 @@ export class AppSearchFormComponent {
 }
 ```
 
-### Template `src/app/search-form/search-form.component.html`
+### Template
 
 ```html title="search-form.component.html"
 
@@ -501,7 +501,7 @@ export class AppSearchFormComponent {
 
 ## Preview
 
-### Controller `src/preview.ts`
+### Controller
 
 ```ts title="preview.ts"
 
@@ -563,7 +563,7 @@ export class Preview {
 
 ## Global styles
 
-### App `src/styles/app.scss`
+### App
 
 ```scss title="app.scss"
 @import "~@angular/cdk/overlay-prebuilt";
@@ -609,7 +609,7 @@ a {
 
 ## Locales
 
-### English `src/locales/en.ts`
+### English
 
 ```ts title="en.ts"
 import {LocaleData} from "@sinequa/core/intl";
@@ -669,7 +669,7 @@ export default <LocaleData> {
 };
 ```
 
-### French `src/locales/fr.ts`
+### French
 
 ```ts title="fr.ts"
 import {LocaleData} from "@sinequa/core/intl";

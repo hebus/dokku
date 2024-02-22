@@ -23,7 +23,7 @@ An SBA development environment requires the following tools and accesses:
 - Access to a Sinequa server over HTTP(S) and an account on this server with access to some data (for testing purposes).
 - An Internet connection to download 3rd party libraries from the Internet via [npm](https://www.npmjs.com/) (Node Package Manager). Note that this is not a strict requirement since these libraries could be manually copied into the  environment.
 
-:::caution
+:::warning
 It can be tempting to use the Sinequa server as the development environment and/or use the administration interface to make changes to the source code, but this is not recommended. The preference is to use a local development environment (on your own computer) and deploy your application on the Sinequa server only when it is ready for production.
 :::
 
@@ -53,7 +53,7 @@ You can either **modify an existing application directly** or **create a new one
 
 Using the standard workspace allows you to customize anything you want, including the low-level libraries. Having access to the source code of the libraries is also useful to help you understand how they work and how to write your own components.
 
-:::caution
+:::warning
 The standard workspace is also packaged as a .zip file in the Sinequa product. However, if you use this file, you will not be able to update the workspace by pulling the latest version from Github!
 :::
 
@@ -70,7 +70,7 @@ cd my-project
 npm install @sinequa/core @sinequa/components @sinequa/analytics --legacy-peer-deps
 ```
 
-:::caution
+:::warning
 This last command requires the `--legacy-peer-deps` flag to prevent npm from installing the **peer dependencies** automatically. We recommend installing the peer dependencies manually on a case-by-case basis. An alternative approach is to copy the list of dependencies from the standard workspace's [`package.json`](https://github.com/sinequa/sba-angular/blob/master/package.json) file.
 :::
 
@@ -161,7 +161,7 @@ When building your app for deployment on a Sinequa server, it should be fine to 
 
 ### Development configuration
 
-:::caution
+:::warning
 During development, the `ng serve` command serves your app on `http://localhost:4200`, which is NOT the Sinequa server and does NOT contain the name of the app!
 :::
 
