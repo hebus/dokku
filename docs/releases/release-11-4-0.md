@@ -5,7 +5,7 @@ sidebar_position: 109
 parent: Releases
 ---
 
-[See on Github](https://github.com/sinequa/sba-angular/releases/tag/1.1.0){:.d-block .text-right }
+[See on Github](https://github.com/sinequa/sba-angular/releases/tag/1.1.0)
 
 This update brings many small improvements and bug fixes to the SBA framework.
 

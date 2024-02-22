@@ -147,7 +147,7 @@ The [controller](https://github.com/sinequa/sba-angular/blob/master/projects/van
 
 The [Search Form component](https://github.com/sinequa/sba-angular/tree/master/projects/vanilla-search/src/app/search-form) uses `sq-search-form` as the one developed in the [tutorial](/docs/tutorial/completed-app.md#search-form-component), but with a more advanced [Autocomplete component](https://github.com/sinequa/sba-angular/blob/master/projects/vanilla-search/src/app/search-form/autocomplete.component.ts) allowing to search into User Settings objects, such as the recent queries, documents, baskets, etc.
 
-![Search form](/assets/modules/search-form.png){: .d-block .mx-auto }
+![Search form](/assets/modules/search-form.png)
 
 The [controller](https://github.com/sinequa/sba-angular/blob/master/projects/vanilla-search/src/app/search-form/search-form.component.ts) includes a search method with `onAutocompleteSearch()` triggered when the [autocomplete component](https://github.com/sinequa/sba-angular/blob/master/projects/vanilla-search/src/app/search-form/autocomplete.component.ts) emits that it should trigger the search. Additionally, it manages the list of custom features that the autocomplete can search into, like the recent documents, the recent queries, the baskets and the saved queries (this list can be [configured](#configuration)).
 

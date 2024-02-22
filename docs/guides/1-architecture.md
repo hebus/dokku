@@ -59,7 +59,7 @@ State can originate from different places:
 - User actions: For example, navigating in the application, typing text in the search bar or clicking on a facet modifies the state of the application.
 - Data from the Sinequa REST API (e.g., search results, saved queries, preferred UI language, etc.).
 
-:::caution
+:::warning
 Note that prior to user login, the application will have no data from the server. A common mistake is calling the server too early. To avoid this, add an `*ngIf="loginService.complete"` test to components that should only be displayed after the user is authenticated.
 :::
 

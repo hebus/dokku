@@ -120,7 +120,7 @@ To switch between results views, include the `sq-results-view-selector` componen
 
 Alternatively, the selector can be displayed as a dropdown menu (`useDropdownMenu = true`):
 
-![Results View Selector Dropdown](/assets/modules/results-view/selector-dropdown.png){: .d-block .mx-auto }
+![Results View Selector Dropdown](/assets/modules/results-view/selector-dropdown.png)
 
 ## Advanced options
 

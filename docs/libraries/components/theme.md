@@ -19,18 +19,18 @@ These styles can be customized, via SASS and CSS variables. The Sinequa Theme us
 ### Homepage
 
 Without the theme:
-![Homepage without the theme](/assets/modules/theme/theme-1.png){: .d-block .mx-auto width="100%"}
+![Homepage without the theme](/assets/modules/theme/theme-1.png)
 
 With the theme:
-![Homepage with the theme](/assets/modules/theme/theme-2.png){: .d-block .mx-auto width="100%"}
+![Homepage with the theme](/assets/modules/theme/theme-2.png)
 
 ### Results page
 
 Without the theme:
-![Results without the theme](/assets/modules/theme/theme-3.png){: .d-block .mx-auto width="100%"}
+![Results without the theme](/assets/modules/theme/theme-3.png)
 
 With the theme:
-![Results with the theme](/assets/modules/theme/theme-4.png){: .d-block .mx-auto width="100%"}
+![Results with the theme](/assets/modules/theme/theme-4.png)
 
 ## Importing/removing the theme
 
@@ -49,7 +49,7 @@ Note that both files include Bootstrap imports and come with an integrated Dark 
 
 As mentioned at the beginning, all files are located inside `@sinequa/components/theme`. They are organized as follow:
 
-![Theme architecture](/assets/modules/theme/theme-architecture.png){: .d-block .mx-auto width="100%"}
+![Theme architecture](/assets/modules/theme/theme-architecture.png)
 
 The components are designed to be minimally styled, with the least styling to be usable with Bootstrap. They are also unopiniated with the most simple and neutral customization. This styling is available while using the `minimal` theme which only imports the basic files such as Bootstrap, Fontawesome and the minimum of files to have everything working.
 
@@ -144,11 +144,11 @@ $card-border-radius: 0; // facet border radius
 
 This will change this :
 
-![Theme example before](/assets/modules/theme/theme-example-1.png){: .d-block .mx-auto }
+![Theme example before](/assets/modules/theme/theme-example-1.png)
 
 Into this:
 
-![Theme example after](/assets/modules/theme/theme-example-2.png){: .d-block .mx-auto }
+![Theme example after](/assets/modules/theme/theme-example-2.png)
 
 
 #### Customize the files you want

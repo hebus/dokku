@@ -15,7 +15,7 @@ For example, the popup that is shown when creating a new user alert.
 
 ![Create alert popup](/assets/modules/modal/modal-new-alert.png)
 *Create alert popup*
-{: .text-center }
+
 
 ## Import
 
@@ -75,7 +75,7 @@ When the method `someFunctionThatNeedsToInformUser()` is called the following po
 
 ![Ok popup](//assets/modules/modal/modal-ok.png)
 *Ok popup*
-{: .text-center }
+
 
 The signature of the method is
 
@@ -114,7 +114,7 @@ Which yields
 
 ![Ok Cancel popup](//assets/modules/modal/modal-okcancel.png)
 *Ok Cancel popup*
-{: .text-center }
+
 
 Alternatively, the `ModalService` provides the method `yesNo()` to create a popup with two buttons **Yes** and **No**, which is essentially the same as `okCancel()` but with different button naming.
 
@@ -140,7 +140,7 @@ Which yields,
 
 ![Yes No popup](//assets/modules/modal/modal-yesno.png)
 *Yes No popup*
-{: .text-center }
+
 
 Finally, if you want to create a popup that does not fit in those proposed by `ModalService`, you can use `ModalService.confirm()`.
 
@@ -213,7 +213,7 @@ Which yields,
 
 ![Custom popup](//assets/modules/modal/modal-custom.png)
 *Custom popup*
-{: .text-center }
+
 
 All these methods are backed by `ModalService.open()`.
 All the modals displayed by `ModalService.open()` are dynamically created, not by including them in the HTML template of the caller component.

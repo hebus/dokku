@@ -225,7 +225,7 @@ This is equivalent as importing `FormatService` and calling `Intl.formatFieldVal
 You can see the usage of this pipe in the breadcrumbs or MySearch facet.
 
 ![Filters displayed in breadcrumbs](/assets/modules/utils/utils-expr-pipe.png)
-<p class="text--center"><em>Filters displayed with ExprPipe in breadcrumbs</em></p>
+*Filters displayed with ExprPipe in breadcrumbs*
 
 Example:
 

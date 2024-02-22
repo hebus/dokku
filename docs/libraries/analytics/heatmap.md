@@ -16,7 +16,7 @@ This module includes a Heatmap visualization of 2-dimensional data based on the 
 - As a facet component, managing the transformation of an aggregation into the heatmap data, and displaying actions to customize this aggregation, as well as a settings panel.
 - As a results view component (mostly for compatibility), directly based on the facet component, but displayed in a slightly different way since the component is not meant to live in a `sq-facet-card` wrapper (See [Facet module](/docs/libraries/components/facet.md)).
 
-![Heatmap](/assets/modules/heatmap/heatmap.png){: .d-block .mx-auto }
+![Heatmap](/assets/modules/heatmap/heatmap.png)
 
 ## Import
 
@@ -61,7 +61,6 @@ The heatmap facet and results view take care of querying the server if the heatm
 
 ## Heatmap Facet
 
-<!-- <doc-facet-heatmap></doc-facet-heatmap> -->
 
 The heatmap facet (`sq-facet-heatmap`) looks as the image above. It can be displayed with:
 
@@ -73,7 +72,7 @@ The heatmap facet (`sq-facet-heatmap`) looks as the image above. It can be displ
 
 This facet includes a settings template which lets the user tune some of the heatmap parameters:
 
-![Settings](/assets/modules/heatmap/settings.png){: .d-block .mx-auto }
+![Settings](/assets/modules/heatmap/settings.png)
 
 The `sq-facet-heatmap` component accepts the following inputs:
 
@@ -99,7 +98,6 @@ The `sq-facet-heatmap` component accepts the following inputs:
 
 ## Heatmap results view
 
-<!-- <doc-results-heatmap-view></doc-results-heatmap-view> -->
 
 The heatmap results view (`sq-results-heatmap-view`) is based directly on the `sq-facet-heatmap` component (by inheritance). The differences are the following:
 

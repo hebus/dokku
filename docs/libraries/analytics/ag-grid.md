@@ -16,7 +16,7 @@ This module includes an integration of the [AG Grid](https://www.ag-grid.com/) l
 
 The module exports one component which is a wrapper of the `ag-grid-angular` component provided by the library, and enriched with a custom toolbar.
 
-![AG Grid integration](/assets/modules/ag-grid/ag-grid.png){: .d-block .mx-auto }
+![AG Grid integration](/assets/modules/ag-grid/ag-grid.png)
 
 ## Import
 
@@ -58,7 +58,6 @@ The `sq-ag-grid-view` component can be integrated in an Angular template with th
 <sq-ag-grid-view [results]="results" [columns]="columns"></sq-ag-grid-view>
 ```
 
-<!-- <doc-ag-grid-view></doc-ag-grid-view> -->
 
 In the snippet above,
 
@@ -145,12 +144,12 @@ You can configure the component in 2 different modes, depending on whether or no
 
 1. **Local Query mode**: If you pass a `Query` to the component, that query will be used by the grid to fetch more data. When the users scrolls down, or uses the grid's filters and sorts, this query is modified (in `SqDatasource`) to fetch more results, but the state of the application is not modified (if you refresh the page, your filters and sorts will be lost).
 
-    ![Local query process](/assets/modules/ag-grid/local-query.png){: .d-block .mx-auto }
+    ![Local query process](/assets/modules/ag-grid/local-query.png)
     *1) The user acts on the grid (eg. by adding a filter) 2) The grid calls the `getRows()` method to get data 3) The server responds and the grid displays the results*
-    {: .text-center }
+    
 
 2. **Global Query mode**: If you **do not** pass a `Query` to the component, it will use `SearchService.query` and modify that query globally. This means that the filters and sorts defined in the grid are persisted in the URL, and therefore the state of the grid is preserved when the page is reloaded (as well as when using the back button). However, the pagination state is not persisted (or else it wouldn't really make sense to use the infinite row model).
 
-    ![Global query process](/assets/modules/ag-grid/global-query.png){: .d-block .mx-auto }
+    ![Global query process](/assets/modules/ag-grid/global-query.png)
     *1) The user acts on the grid (eg. by adding a filter) 2) The grid calls the `getRows()` method to get data 3) The global query is modified by the search service, the grid gets new results and a new datasource is created 4) The pagination is managed like in the local query mode*
-    {: .text-center }
+    

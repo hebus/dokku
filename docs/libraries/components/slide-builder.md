@@ -12,8 +12,8 @@ sidebar_position: 14
 
 This module provides components for displaying, rearranging and exporting Powerpoint slides.
 
-![Slide Builder](/assets/modules/slide-builder/slide-builder.png){: .d-block .mx-auto }
-{: .text-center }
+![Slide Builder](/assets/modules/slide-builder/slide-builder.png)
+
 
 Users can select slides from the results list to add them to their presentation. Rearranging the slide order is simply done by drag and drop. Finally, a button allows to produce a Powerpoint file from the list of slides.
 
@@ -36,16 +36,16 @@ Thus, we must ensure the conversion plan satisfies the following criteria:
 
 1. Conversion Plan: ***Store Original*** --enabled for PowerPoint extensions.
 
-    ![Slide Builder](/assets/modules/slide-builder/slide-conversionplan.png){: .d-block .mx-auto }
-    {: .text-center }
+    ![Slide Builder](/assets/modules/slide-builder/slide-conversionplan.png)
+    
 
 2. Converter: Converters splitting the documents
 
-    ![Slide Builder](/assets/modules/slide-builder/slide-converter1.png){: .d-block .mx-auto }
-    {: .text-center }
+    ![Slide Builder](/assets/modules/slide-builder/slide-converter1.png)
+    
     ---
-    ![Slide Builder](/assets/modules/slide-builder/slide-converter2.png){: .d-block .mx-auto }
-    {: .text-center }
+    ![Slide Builder](/assets/modules/slide-builder/slide-converter2.png)
+    
 
 ### Collection
 
@@ -57,8 +57,8 @@ There are two ways to configure a collection to index slides:
 
     When creating a collection **specifically** for the slide builder module, the collection should only index PowerPoint extensions.
 
-    ![Slide Builder](/assets/modules/slide-builder/slide-extensions.png){: .d-block .mx-auto }
-    {: .text-center }
+    ![Slide Builder](/assets/modules/slide-builder/slide-extensions.png)
+    
 
     ⚠️ The conversion plan previously configured should be attached to this collection.
 
@@ -76,11 +76,11 @@ The query web service must be configured to provide the slides in a context wher
 
 For example, we can configure tab search based on the **docformat** or **treepath** column and use index inclusions/exclusions to return the right content in our dedicated "slides" tab.
 
-![Slide Builder](/assets/modules/slide-builder/slide-queryservice-tabs1.png){: .d-block .mx-auto }
-{: .text-center }
+![Slide Builder](/assets/modules/slide-builder/slide-queryservice-tabs1.png)
 
-![Slide Builder](/assets/modules/slide-builder/slide-queryservice-tabs2.png){: .d-block .mx-auto }
-{: .text-center }
+
+![Slide Builder](/assets/modules/slide-builder/slide-queryservice-tabs2.png)
+
 
 Note that the slides index is excluded from the "all" tab, to avoid displaying individual slides in that context.
 
@@ -132,7 +132,6 @@ This component is designed to be embedded in a facet card:
 </sq-facet-card>
 ```
 
-<!-- <doc-slide-builder></doc-slide-builder> -->
 
 When at least one slide is selected, the action buttons are displayed in the facet header. They let users export the presentation as a Powerpoint file, save it as a basket (or collection), or clear the current selection.
 
@@ -161,7 +160,6 @@ The component requires a `Results` object as an input, and, of course, the compo
 </sq-slide-list>
 ```
 
-<!-- <doc-slide-list></doc-slide-list> -->
 
 The component has various optional inputs and outputs:
 

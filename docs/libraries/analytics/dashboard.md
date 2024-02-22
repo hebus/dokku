@@ -14,7 +14,7 @@ This module is an integration of the [**angular-gridster2**](https://tiberiuzuld
 
 The module exports a component that takes in a list of widget configurations and displays these widgets within the `gridster` component. The component handles common operations such as resizing, adding & removing, renaming, and reordering widgets.
 
-The usage of this component is illustrated in the [Pepper](../../apps/3-pepper.md) application.
+The usage of this component is illustrated in the [Pepper](apps/3-pepper.md) application.
 
 ![Pepper dashboard](/assets/apps/pepper.png)
 
@@ -52,7 +52,7 @@ In a more typical usage, widgets have a different `type` property that is used t
 
 For example:
 
-{% raw %}
+
 ```html
 <ng-template let-widget>
   <div class="card h-100">
@@ -64,11 +64,11 @@ For example:
   </div>
 </ng-template>
 ```
-{% endraw %}
+
 
 It is also recommended to use the `sq-facet-card` component from the [Facet Module](../components/facet.md) to encapsulate the widgets. This allows to display built-in "actions" to remove, rename and maximize the widgets:
 
-{% raw %}
+
 ```html
 <ng-template let-widget>
   <sq-facet-card
@@ -82,7 +82,7 @@ It is also recommended to use the `sq-facet-card` component from the [Facet Modu
   </sq-facet-card>
 </ng-template>
 ```
-{% endraw %}
+
 
 Thanks to the facet-card API, many functionalities are supported out-of-the-box, like the display of the actions of the child "facet components" (marked with the `#facet` template variable).
 

@@ -12,8 +12,8 @@ sidebar_position: 15
 
 This module provides a component to display a thread of comments attached to a document.
 
-![Comments](/assets/modules/comments/comments.png){: .d-block .mx-auto }
-{: .text-center }
+![Comments](/assets/modules/comments/comments.png)
+
 
 Users can post comments, replies and like other comments. The author of a comment (or an admin) has the possibility to edit and delete this comment. The component supports [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax, enabling users to format their posts without the need for a complex Wysiwyg editor.
 
@@ -50,7 +50,6 @@ This component has one important dependency: the [Marked](https://marked.js.org/
 
 ## Comments component
 
-<!-- <doc-comments></doc-comments> -->
 
 The `sq-comments` component displays a list of comments and replies attached to a specific document. This component can be displayed anywere as long as a document id is provided.
 

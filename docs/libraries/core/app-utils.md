@@ -231,7 +231,7 @@ by default so that fielded search expressions such as `size:>=25Kb` can be used.
 required so that the expressions can be parsed on the server. A server-side custom parser takes the form of a function plugin named
 `ParseExpressionValue` which takes the custom parser name and the value to be parsed as parameters:
 
-```cs
+```csharp
 public class ParseExpressionValue : FunctionPlugin
 {
     public override string GetValue(IDocContext ctxt, params string[] values)

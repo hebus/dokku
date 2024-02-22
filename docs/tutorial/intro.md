@@ -58,14 +58,14 @@ export class MyModule {}
 In this tutorial, we generally refer to the second type of modules (Angular modules).
 
 ![Sample module](/assets/tutorial/modules.png)
-<p class="text--center"><em>Relationships between Angular modules (blue), components (purple) and their library (green)</em></p>
+*Relationships between Angular modules (blue), components (purple) and their library (green)*
 
 Some of these modules are based on the [**Bootstrap**](https://getbootstrap.com/) library. When a module or component depends on Bootstrap, its class name is prefixed with **`Bs`** (eg. `BsSearchModule`, `BsFacetList`).
 
 The tutorial is divided in chapters which each deals with a new Sinequa feature. These features come packaged as modules of the [`@sinequa/components`](/libraries/components/components.md) library. The illustration below depicts in more details the content of a typical module/library which you will use in this tutorial.
 
 ![Sample module](/assets/tutorial/modules2.png)
-<p class="text--center"><em>Content of one of the libraries (green), including modules (blue), components (purple), services (red), styles (orange) and locales (grey)</em></p>
+*Content of one of the libraries (green), including modules (blue), components (purple), services (red), styles (orange) and locales (grey)*
 
 
 **This gives you a natural checklist for dealing with these modules:**

@@ -22,7 +22,7 @@ This module provides functionality to display an autocomplete dropdown panel und
 
 Both the directive and the component are largely extensible and customizable (See [Vanilla Search](/docs/apps/2-vanilla-search.md)).
 
-![Autocomplete](/assets/modules/autocomplete/autocomplete.png){: .d-block .mx-auto }
+![Autocomplete](/assets/modules/autocomplete/autocomplete.png)
 
 Schematically, the code looks as follow:
 
@@ -103,7 +103,7 @@ You can customize the behavior of the directive by extending it and enriching it
 
 The transition between the different states is depicted below:
 
-![Autocomplete states](/assets/modules/autocomplete/autocomplete-states.png){: .d-block .mx-auto }
+![Autocomplete states](/assets/modules/autocomplete/autocomplete-states.png)
 
 ### Suggest Service
 
@@ -128,7 +128,6 @@ The `SuggestService` provides the following methods:
 
 ### Autocomplete List Component
 
-<!-- <doc-autocomplete-list></doc-autocomplete-list> -->
 
 The `sq-autocomplete-list` component is a fairly simple component that displays the list of suggestions from the directive. This component expects a `ng-template` named `#itemTpl` to be passed by transclusion, to actually display the items:
 
@@ -176,15 +175,15 @@ The autocomplete functionality is built on top of two web services of the Sinequ
 
 The Suggest Query web service uses a **Suggestion Query** configured on the Sinequa server to generate suggestions. These queries can be created and managed in the Sinequa administration, under *Search-Based Applications > App Dependencies > Suggestion Queries*.
 
-![Suggest query](/assets/modules/autocomplete/suggest-query.png){: .d-block .mx-auto }
+![Suggest query](/assets/modules/autocomplete/suggest-query.png)
 *Standard configuration of a Suggestion Query*
-{: .text-center }
+
 
 A suggestion query is associated to a **Suggestion Lexicon**. The lexicon contains all the terms which can be used as suggestions. These terms are generated from the index content, and each one belongs in a **"kind"** (by default the kind just corresponds to the name of the column from which the term is extracted).
 
-![Suggest lexicon](/assets/modules/autocomplete/lexicon.png){: .d-block .mx-auto }
+![Suggest lexicon](/assets/modules/autocomplete/lexicon.png)
 *Configuration of a suggestion lexicon*
-{: .text-center }
+
 
 The "kind" (or "category") is important, as it is used in fielded search to request suggestions for a specific field. For example, when autocompleting the field `company`, we do not want *any* kind of suggestion: We want only suggestions belonging to the "company" kind / category.
 

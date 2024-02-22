@@ -19,7 +19,7 @@ The module includes two components:
 - A chart component displaying given input data, unaware of Sinequa's API and data structures. It supports different chart types from the [ngx-charts](https://swimlane.github.io/ngx-charts/) library.
 - A "facet" component taking care of pre-processing the aggregation data available in the results, and passing it to the chart component. Its API is similar to that of the [List Facet component](//libraries/components/facet.html#list-facet).
 
-![Chart](/assets/modules/ngx-charts/chart.png){: .d-block .mx-auto }
+![Chart](/assets/modules/ngx-charts/chart.png)
 
 ## Import
 
@@ -80,11 +80,10 @@ The `options` input is an object of type `ChartOptions`, an interface requiring 
 
 ## Facet Chart Component
 
-<!-- <doc-facet-chart></doc-facet-chart> -->
 
 The `sq-facet-ngx-chart` component displays an aggregation from the results as a chart. The user can click on items in the chart to filter the results.
 
-![Chart facet](/assets/modules/facet/facet-chart.png){: .d-block .mx-auto}
+![Chart facet](/assets/modules/facet/facet-chart.png)
 
 This component requires at least a `Results` input and the name of the aggregation to work properly.
 

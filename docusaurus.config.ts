@@ -1,11 +1,13 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import { themes, Prism } from "prism-react-renderer";
+(typeof global !== "undefined" ? global : window).Prism = Prism
+require("prismjs/components/prism-applescript")
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import { Config } from "@docusaurus/types";
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
+
+const config: Config = {
   title: 'Sinequa SBA Framework',
   tagline: 'Connect your modern workplace and drive innovation from the inside out',
   favicon: 'img/favicon.ico',
@@ -15,12 +17,12 @@ const config = {
   url: 'https://github.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/dokku/',
+  baseUrl: '/sba-angular/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'hebus', // Usually your GitHub org/user name.
-  projectName: 'dokku', // Usually your repo name.
+  projectName: 'sba-angular', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -38,6 +40,13 @@ const config = {
 
   plugins: [require.resolve('docusaurus-lunr-search')],
 
+  markdown: {
+    mdx1Compat: {
+      comments: false,
+      admonitions: false,
+      headingIds: false
+    }
+  },
 
   presets: [
     [
@@ -49,14 +58,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/hebus/dokku/tree/main/',
+            'https://github.com/sinequa/sba-angular/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
-          //   'https://github.com/hebus/sba-angular/tree/main/packages/create-docusaurus/templates/shared/',
+          //   'https://github.com/sinequa/sba-angular/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -128,8 +137,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} <a href="https://www.sinequa.com" aria-alt="Sinequa website">Sinequa</a>. Distributed under the terms of the <a href="https://github.com/sinequa/sba-angular/blob/master/license.txt" aria-alt="MIT license">MIT license</a>`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        additionalLanguages: ['csharp'],
         magicComments: [
           {
             className: 'code-block-error-line',
@@ -145,4 +155,4 @@ const config = {
     }),
 };
 
-module.exports = config;
+export default config;

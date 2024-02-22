@@ -17,7 +17,7 @@ The module includes two components:
 - A timeline component taking data as an input and displaying it, unaware of Sinequa's API and data structures.
 - A "facet" component taking care of fetching, updating and pre-processing the data, and passing it to the timeline component.
 
-![Timeline](/assets/modules/timeline/timeline.png){: .d-block .mx-auto }
+![Timeline](/assets/modules/timeline/timeline.png)
 
 ## Import
 
@@ -57,7 +57,7 @@ this.timeseries = [
 ];
 ```
 
-![Line chart](/assets/modules/timeline/line-chart.png){: .d-block .mx-auto }
+![Line chart](/assets/modules/timeline/line-chart.png)
 
 You can combine multiple series. At least one must have `primary: true` to serve as reference for computing the x-axis.
 
@@ -108,9 +108,9 @@ this.timeseries = [
 ];
 ```
 
-![Line chart](/assets/modules/timeline/line2-chart.png){: .d-block .mx-auto }
+![Line chart](/assets/modules/timeline/line2-chart.png)
 *The X-axis is computed to fit the red and green series as they are primary series*
-{: .text-center }
+
 
 It is also possible to change globally how the component renders these areas and curves by binding the `curveType` input property. By default, it is set to `"curveMonotoneX"`, but any of the methods described on [this page](http://bl.ocks.org/d3indepth/b6d4845973089bc1012dec1674d3aff8) can be selected.
 
@@ -132,7 +132,7 @@ this.events = [
 ]
 ```
 
-![Events](/assets/modules/timeline/events.png){: .d-block .mx-auto }
+![Events](/assets/modules/timeline/events.png)
 
 Like for the timeseries, it is possible to customize the size and style of each event with the following optional properties:
 
@@ -148,7 +148,7 @@ this.events = [
 ]
 ```
 
-![Custom Events](/assets/modules/timeline/events-custom.png){: .d-block .mx-auto }
+![Custom Events](/assets/modules/timeline/events-custom.png)
 
 By default, when an event is selected, a tooltip is displayed, showing the event's `date` and `display` property. It is possible to pass a custom template to the component to display the event in a completely custom way:
 
@@ -163,11 +163,11 @@ By default, when an event is selected, a tooltip is displayed, showing the event
 </sq-timeline>{% endraw %}
 ```
 
-![Custom tooltip](/assets/modules/timeline/custom-tooltip.png){: .d-block .mx-auto }
+![Custom tooltip](/assets/modules/timeline/custom-tooltip.png)
 
 When there are too many events in the same timeframe, the events are grouped together under one marker. When the user zooms in or zooms out, the events are grouped/ungrouped appropriately. The tooltip diplays the list of events under one marker. Note that the size and style of the marker is the one of the first marker (chronologically).
 
-![Grouped markers](/assets/modules/timeline/markers.png){: .d-block .mx-auto }
+![Grouped markers](/assets/modules/timeline/markers.png)
 
 Note that the X-axis is **not** resized in function of events (only the primary time series). A different implementation would be possible, to account for both the series and events.
 
@@ -191,7 +191,7 @@ The component allows different types of interactions:
 
 - **Selection**: Performed by clicking and dragging the mouse over the chart. This allows to select a range of dates, which triggers an event so that the parent component can respond (for example by launching a new search).
 
-    ![Selection](/assets/modules/timeline/selection.png){: .d-block .mx-auto }
+    ![Selection](/assets/modules/timeline/selection.png)
 
     ```html
     <sq-timeline [data]="timeseries" (selectionChange)="onSelectionChange($event)"></sq-timeline>
@@ -203,7 +203,7 @@ The component allows different types of interactions:
 
 - **Tooltip**: As we have seen above, a tooltip is displayed when clicking on an event. Additionally, when the user is simply moving the mouse over the chart, a vertical line is displayed with the corresponding date.
 
-    ![Tooltip](/assets/modules/timeline/tooltip.png){: .d-block .mx-auto }
+    ![Tooltip](/assets/modules/timeline/tooltip.png)
 
     This behavior can be turned off by binding `[showTooltip]="false"` to the component.
 
@@ -215,7 +215,6 @@ Additionally you can bind the `margin` property to adjust the space around the t
 
 ## Facet Timeline Component
 
-<!-- <doc-facet-timeline></doc-facet-timeline> -->
 
 The `sq-timeline` component does a lot of work to render the timelines, events and manage the user interactions, but it does not know anything about the Sinequa services and data structures.
 
@@ -232,9 +231,9 @@ The `sq-facet-timeline` component is in charge of "feeding" the timeline with ac
   - A "simple" aggregation: In this case, the configuration (of type `TimelineAggregation`) specifies the name of an aggregation to be plotted (of course this aggregation should be over a sourcedatetime column). Note that you can specify an aggregation that may or may not be included in the standard search (See the *Include in standard search* option of the aggregation in the administration).
   - A "combined" aggregation: In this case, the configuration consists of multiple `TimelineAggregation` objects. Each of them corresponds to a different "scale" of the same value. It is required to provide the list of scales corresponding to each aggregation. The component will respond to changes of scale (when the user zooms in or out) by querying the most appropriate aggregation. Combined aggregations are the only scalable way of displaying temporal information when the amount of data is enormous, without loosing any accuracy or performance.
 
-![Aggregation configuration](/assets/modules/timeline/aggregation.png){: .d-block .mx-auto }
+![Aggregation configuration](/assets/modules/timeline/aggregation.png)
 *Sample aggregation configured in the admin. Note: 1) **modified** is a datetime column 2) The aggregation is not included in standard search 3) We do not truncate the data 4) The data will sorted by date 5) The resolution is a week*
-{: .text-center }
+
 
 By default, a simple `TimelineAggregation` is configured, to display the `Timeline` aggregation configured in the default Query web service.
 
@@ -296,7 +295,7 @@ this.otherAggregation = {
 ```
 
 *The above illustrates the three types of timeseries configuration that can be passed to `sq-facet-timeline`*
-{: .text-center }
+
 
 We have already seen the structure and options of `TimelineSeries`.
 
@@ -323,9 +322,9 @@ Note that the styling parameters and the `primary` input are still there but can
 - The list of records in the current results: If a record has a "modified" date (or other sourecedatetime), it can be plotted on the timeline as an event. This allows the user to quickly visualize how the top, most relevant data is distributed in time, and filter this data accordingly. Furthermore, the component listens for selection changes from the `SelectionService` and can modify the event styling for selected records (which makes it easy for a user to see where a selected record is placed on the timeline).
 - An aggregation of events: If a column of the index stores "events", they can be aggregated by the engine and displayed on the timeline. An "event" in that sense is a normalized field that contains a date and name/id. For example `(2020-02-14)#(VALENTINES DAY)`, which is the format of extraction of **cooccurrences** (but any format can be used). *Note that Sinequa ES includes a very capable Text-Mining Agent that can extract date entities from text in a wide array of formats and languages. Event names can easily be extracted via a simple dictionary-based entity. It is then easy to configure a cooccurrence extraction for dates and event names.*
 
-![Cooccurrences](/assets/modules/timeline/cooccurrence.png){: .d-block .mx-auto }
+![Cooccurrences](/assets/modules/timeline/cooccurrence.png)
 *Sample configuration of a cooccurrence entity*
-{: .text-center }
+
 
 By default, the list of records is configured to be displayed by their modified dates. Therefore, the following displays the list of records:
 
@@ -374,7 +373,6 @@ The `TimelineEventAggregation` requires the name of the aggregation configured o
 
 ### Legend
 
-<!-- <doc-timeline-legend></doc-timeline-legend> -->
 
 The `sq-facet-timeline` component can display a legend sub-component. The legend's content, position and styles can be customized with the following parameters:
 
@@ -395,7 +393,7 @@ The `sq-facet-timeline` component can display a legend sub-component. The legend
 ></sq-facet-timeline>
 ```
 
-![legend](/assets/modules/timeline/timeline-legend.png){: .d-block .mx-auto }
+![legend](/assets/modules/timeline/timeline-legend.png)
 
 Note that the legend is available as a standalone component (`sq-timeline-legend`):
 
@@ -404,7 +402,7 @@ Note that the legend is available as a standalone component (`sq-timeline-legend
 </sq-timeline-legend>
 ```
 
-![legend](/assets/modules/timeline/legend.png){: .d-block .mx-auto }
+![legend](/assets/modules/timeline/legend.png)
 
 ### Other parameters and events
 
@@ -454,7 +452,7 @@ Finally, `sq-facet-timeline` is a facet component, and can therefore easily be e
 </sq-facet-card>
 ```
 
-![Facet component](/assets/modules/timeline/timeline2.png){: .d-block .mx-auto }
+![Facet component](/assets/modules/timeline/timeline2.png)
 
 The component provides a "clear filters" action displayed in the facet frame. It is possible to add custom actions, by binding them to the `[actions]` input of `sq-facet-card`.
 

@@ -219,7 +219,6 @@ And in the template:
 
 ### Facet Bar
 
-<!-- <doc-facet-bar></doc-facet-bar> -->
 
 The `sq-facet-bar` component is a container which can display a dynamic list of facets.
 

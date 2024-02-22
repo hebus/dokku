@@ -16,7 +16,7 @@ For the creation and management of notifications, please refer to the Core Notif
 
 ![Error notification](/assets/modules/notification/notification-error-notification-example.png)
 *An error notification*
-{: .text-center }
+
 
 ## Import
 
@@ -52,14 +52,12 @@ The `BsNotification` component is the Bootstrap-flavor implementation of a notif
 
 #### BsNotifications
 
-<!-- <doc-notifications></doc-notifications> -->
 
 The `BsNotifications` component is the component representing the current notification list and displaying the notification on the screen.
 It is imported and used in the `app.component.html` of `vanilla-search`.
 
 #### BsNotificationsManager
 
-<!-- <doc-notifications-manager></doc-notifications-manager> -->
 
 The `BsNotificationsManager` component is the component
 that is used to manage the list of notifications of your application.

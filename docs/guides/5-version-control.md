@@ -18,7 +18,7 @@ git clone https://github.com/sinequa/sba-angular.git my-project
 cd my-project
 ```
 
-![Git clone](/assets/guides/git-clone.png){: style="height: 300px;" }
+![Git clone](/assets/guides/git-clone.png)
 
 The Git repository contains the source code of the SBA Framework, but the dependencies (i.e., the node modules) are not included. You need to install them with:
 
@@ -45,13 +45,13 @@ git add .
 git commit -m "My commit message"
 ```
 
-![Git commit](/assets/guides/git-commit.png){: style="height: 300px;" }
+![Git commit](/assets/guides/git-commit.png)
 
 ## Work collaboratively with other developers
 
 When working collaboratively, you need a central repository to host the code. This can be a private repository on an internal server or a public repository on a service like [Github](https://github.com).
 
-:::caution
+:::warning
 If you cloned the official SBA repository, your local clone is configured to push to that repository. But obviously, you do not have write access to it! You need to add a new remote repository that you own and have write access to.
 :::
 For example:
@@ -79,11 +79,11 @@ Whenever new changes are pushed to the central repository, you can pull them wit
 git pull internal master
 ```
 
-![Git pull](/assets/guides/git-pull.png){: style="height: 300px;" }
+![Git pull](/assets/guides/git-pull.png)
 
 `git pull` is actually a shortcut for `git fetch` (which downloads the changes) and `git merge` (which merges the changes into your local branch). If there are conflicts, the merge process will ask you to resolve them manually.
 
-:::caution
+:::warning
 Note that after a `git pull`, the project dependencies might have been updated, so you need to run `npm install` again.
 :::
 

@@ -41,7 +41,7 @@ The general login process is depicted in the following diagram (depending on the
 
 ![Login process](/assets/tipstricks/login-process.png)
 *Red boxes represents calls to Sinequa web services*
-{: .text-center }
+
 
 Notice that the Login process includes a call to three web services: **app** (configuration of the app and its web services), **principal** (identity of the user, typically from a directory), **usersettings** (user data, including baskets, saved queries, etc.). The login process is considered complete when all 3 services have downloaded this data and are initialized.
 
@@ -226,7 +226,7 @@ module.exports = [
 ];
 ```
 
-:::caution
+:::warning
 The above script is for a server accessed over **HTTP**. For **HTTPS**, replace `Agent` by `HttpsAgent` (3 occurrences)
 :::
 
@@ -291,7 +291,7 @@ If you need to enable Windows SSO with CORS, additional steps are needed:
 
     - Send the actual `GET` or `POST` query to the REST API using authentication in the HTTP headers
 
-:::caution Important note
+:::warning Important note
 Upgrading your Sinequa environment will override the `web.config` file. So it’s highly recommended to backup this file in the folder and replace the web.config file with the backup after an upgrade.
 :::
 
@@ -363,7 +363,7 @@ In development mode, you should use a proxy to avoid CORS issues. Run `ng serve 
 }
 ```
 
-:::caution
+:::warning
 However, the problem with using a proxy in this situation is that the JWT cookie will be associated with the Sinequa server URL (`https://my-sinequa-server.com`) instead of your proxy URL (`https://localhost:4200`). The requests (sent to the latter) will not be authenticated and the user will keep being redirected to the Identity Provider.
 :::
 
@@ -479,7 +479,7 @@ In development mode, you should use a proxy to avoid CORS issues. Run `ng serve 
 }
 ```
 
-:::caution
+:::warning
 However, the problem with using a proxy in this situation is that the JWT cookie will be associated with the Sinequa server URL (`https://my-sinequa-server.com`) instead of your proxy URL (`https://localhost:4200`). The requests (sent to the latter) will not be authenticated and the user will keep being redirected to the Identity Provider.
 :::
 

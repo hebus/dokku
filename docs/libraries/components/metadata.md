@@ -14,7 +14,7 @@ This module introduces the UI component that displays the metadata of a document
 
 ![Document metadata](/assets/modules/metadata/metadata-example.png)
 *Document metadata*
-{: .text-center }
+
 
 ## Import
 
@@ -105,7 +105,6 @@ The component also emits an event when an element of the metadata is selected / 
 
 ### Metadata
 
-<!-- <doc-metadata></doc-metadata> -->
 
 The following metadata is displayed with all the default options:
 
@@ -146,11 +145,11 @@ this.metadata: MetadataConfig[] = [
 </sq-metadata>
 ```
 
-![Default metadata settings](/assets/modules/metadata/metadata-default.png){: .d-block .mx-auto }
+![Default metadata settings](/assets/modules/metadata/metadata-default.png)
 
 You can also add the `[layout]="'table'"` input to the component to have one entry per line.
 
-![Table metadata](/assets/modules/metadata/metadata-table.png){: .d-block .mx-auto }
+![Table metadata](/assets/modules/metadata/metadata-table.png)
 
 The `filterable` and `excludable` parameters can be used to display the filtering buttons when hovering the metadata entry:
 
@@ -172,13 +171,13 @@ this.metadata: MetadataConfig[] = [
     ...
 ```
 
-![Filter and Exclude](/assets/modules/metadata/metadata-filters1.png){: .d-block .mx-auto }
+![Filter and Exclude](/assets/modules/metadata/metadata-filters1.png)
 
-![Filter only](/assets/modules/metadata/metadata-filters2.png){: .d-block .mx-auto }
+![Filter only](/assets/modules/metadata/metadata-filters2.png)
 
 If a metadata is an entity, you can set the `showEntityExtract` parameter as `true` to display the entity extract when you hover it:
 
-![Entity tooltip](/assets/modules/metadata/metadata-entity-tooltip.png){: .d-block .mx-auto }
+![Entity tooltip](/assets/modules/metadata/metadata-entity-tooltip.png)
 
 Here is an example with a custom action:
 
@@ -201,7 +200,7 @@ this.metadata: MetadataConfig[] = [
     ...
 ```
 
-![Metadata custom action](/assets/modules/metadata/metadata-actions.png){: .d-block .mx-auto }
+![Metadata custom action](/assets/modules/metadata/metadata-actions.png)
 
 As mentioned before, the `config` array input can also contain strings, allowing to create full sentences containing some metadata entries inside of it. Here is an example:
 
@@ -221,7 +220,7 @@ this.metadata: (MetadataConfig | string)[] = [
 ];
 ```
 
-![Metadata custom action](/assets/modules/metadata/metadata-sentence.png){: .d-block .mx-auto }
+![Metadata custom action](/assets/modules/metadata/metadata-sentence.png)
 
 ### Metadata item
 
@@ -231,7 +230,7 @@ While `sq-metadata` facilitates the layout, you can just use `sq-metadata-item` 
 <sq-metadata-item [record]="record" [field]="'modified'"></sq-metadata-item>
 ```
 
-![Metadata item](/assets/modules/metadata/metadata-item.png){: .d-block .mx-auto }
+![Metadata item](/assets/modules/metadata/metadata-item.png)
 
 Or with more parameters:
 
@@ -247,4 +246,4 @@ Or with more parameters:
 </sq-metadata-item>
 ```
 
-![Metadata item](/assets/modules/metadata/metadata-item2.png){: .d-block .mx-auto }
+![Metadata item](/assets/modules/metadata/metadata-item2.png)

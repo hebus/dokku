@@ -20,7 +20,7 @@ This module provides functionality to display the HTML preview of a document in 
 - A **core API** to display the HTML preview and interact with its content. It is composed of three components: `sq-preview` to display the preview, `sq-preview-tooltip`, a dynamic tooltip that can be inserted in the document, and `sq-preview-minimap` which adds a right bar with the location of the relevant extracts inside the document.
 - Additional **components** based on this core API to interact with the preview and display some related data (the extracts or entities list, etc.).
 
-![Preview](/assets/tutorial/modal-preview.png){: .d-block .mx-auto }
+![Preview](/assets/tutorial/modal-preview.png)
 
 ## Import
 
@@ -157,13 +157,13 @@ When the HTML preview finishes loading, the component emits an empty `ready` eve
 
 The core API also includes `sq-preview-tooltip`, a customizable component which can be inserted in the HTML preview, and responds to the user's mouse movements and clicks. This enables custom features when hovering over an entity or selecting some text.
 
-![Tooltip hover](/assets/modules/preview/tooltip-hover.png){: .d-block .mx-auto }
+![Tooltip hover](/assets/modules/preview/tooltip-hover.png)
 *Default Preview Tooltip when hovering over an entity*
-{: .text-center }
 
-![Tooltip select](/assets/modules/preview/tooltip-select.png){: .d-block .mx-auto }
+
+![Tooltip select](/assets/modules/preview/tooltip-select.png)
 *Customized tooltip showing a "Search" action in Vanilla Search*
-{: .text-center }
+
 
 The tooltip is inserted in the preview by transclusion. It takes custom *actions* (See [Action Module](action.md)) as inputs for either the *entity hover* or the *text selection* behaviors shown above.
 
@@ -195,9 +195,9 @@ this.tooltipTextActions = [new Action({
 
 The component `sq-preview-minimap` could be inserted within the HTML Preview to display a highlights's minimap.
 
-![minimap](/assets/modules/preview/preview-minimap.png){: .d-block .mx-auto }
+![minimap](/assets/modules/preview/preview-minimap.png)
 *highlights mini map*
-{: .text-center }
+
 
 The minimap is inserted by transclusion:
 
@@ -214,7 +214,7 @@ The minimap is inserted by transclusion:
 
 The `sq-preview-extracts-panel` component displays the relevant extracts extracted from the `PreviewDocument`. Clicking on a extract selects it in the preview (highlight and scroll).
 
-![Extract panel](/assets/modules/preview/extracts.png){: .d-block .mx-auto width="350px"}
+![Extract panel](/assets/modules/preview/extracts.png)
 
 The component requires the inputs `previewData` and `preview`. You may want to also provide `highlights` to apply some.
 
@@ -233,7 +233,7 @@ This component is used in [Vanilla Search](/docs/apps/2-vanilla-search.md)'s [Pr
 
 The `sq-preview-entity-panel` component displays the lists of entities and matches in the document. The data is available in the `PreviewData` object. The facets displaying each type of highlight allow the user to navigate between the different occurrences and turn them on or off.
 
-![Entity panel](/assets/modules/preview/entities.png){: .d-block .mx-auto width="350px" }
+![Entity panel](/assets/modules/preview/entities.png)
 
 The component requires the inputs `previewData` and `preview`. You may want to also provide `highlights` to apply some.
 

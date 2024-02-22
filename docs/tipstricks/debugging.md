@@ -17,7 +17,7 @@ Modern browsers all have an inspector tool that you can open with F12, or right-
 - **Network**: Displays all the HTTP requests emitted by your app, which lets you see the details of the interactions with the Sinequa API (requests to and responses from the server), as well as all other downloaded resources.
 
 ![Inspector](/assets/tipstricks/inspector.png)
-<p class="text--center"><em>The console displayed in the Chrome inspector</em></p>
+*The console displayed in the Chrome inspector*
 
 ## How to deal with runtime errors
 

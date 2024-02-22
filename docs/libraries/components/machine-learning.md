@@ -106,7 +106,7 @@ It is placed in the mini preview where you can switch of view between the docume
 
 ### Chat
 
-![Chat Component](/assets/modules/machine-learning/chatgpt-facet.png){: .d-block .mx-auto }
+![Chat Component](/assets/modules/machine-learning/chatgpt-facet.png)
 
 The chat opens a conversation instance with a Generative Large-Language Model service (such as Azure OpenAI, powering ChatGPT, or Google's PaLM). It has a default configuration and therefore doesn't require any parameter in order to work, but there are many options to configure it.
 
@@ -116,7 +116,7 @@ The chat opens a conversation instance with a Generative Large-Language Model se
 * `enableChat` (default: `true`): Whether it is allowed to chat with ChatGPT (we may want to disable it sometimes, like when we just want to display a summary, or any desired message that we can setup with the prompt configuration).
 * `searchMode` (default: `false`): When set to true, this enables "auto-search". This lets users trigger a Sinequa search query that constructs "attachments" (snippets of text from documents) that they can then inject in the conversation with ChatGPT. Auto-search is triggered directly from the Chat's input, by pressing the Tab key, or by click the Sinequa logo displayed to the right of the search bar.
 
-![Search mode](/assets/modules/machine-learning/auto-search.png){: .d-block .mx-auto }
+![Search mode](/assets/modules/machine-learning/auto-search.png)
 
 * `query` (default: `SearchService.query`): The query to interact with when making requests (like when searching for attachments while in `searchMode`).
 * All properties from `defaultChatConfig` to override (model, UI, prompts, auto search properties)
@@ -147,7 +147,7 @@ if(passages?.length) {
 
 ### Chat Settings
 
-![Chat Settings](/assets/modules/machine-learning/chat-settings.png){: .d-block .mx-auto }
+![Chat Settings](/assets/modules/machine-learning/chat-settings.png)
 
 This component allows to edit a chat configuration, which corresponds to all properties from the `ChatConfig` interface.
 

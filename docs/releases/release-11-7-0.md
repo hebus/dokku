@@ -5,7 +5,7 @@ sidebar_position: 104
 parent: Releases
 ---
 
-[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.7.0){:.d-block .text-right }
+[See on Github](https://github.com/sinequa/sba-angular/releases/tag/11.7.0)
 
 ## General changes
 

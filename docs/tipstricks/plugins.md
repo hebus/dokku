@@ -20,7 +20,7 @@ Note that former `SearchPlugin` can generally be replaced by either a `QueryPlug
 
 A `QueryPlugin` is a C# plugin deployed on the Sinequa server and assigned to a specific Query web service configuration.
 
-![Query Plugin](/assets/tipstricks/query-plugin.png){: .d-block .mx-auto }
+![Query Plugin](/assets/tipstricks/query-plugin.png)
 
 The Query web service has a rich API which can be used in many different ways. Unlike other plugins, the `QueryPlugin` is NOT a class with blank hook methods called by the main web service. Instead, the plugin class implements a large part of the logic of the web service, and this `QueryPlugin` class is always used by the web service, *even when you don't create a plugin*. When you do create a `QueryPlugin`, you are overriding the service's behavior directly (not just hooking into it).
 

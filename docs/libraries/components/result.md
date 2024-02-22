@@ -104,7 +104,6 @@ The `sq-sponsored-results` component displays the sponsored links relevant for a
 <sq-sponsored-results [query]="searchService.query"></sq-sponsored-results>
 ```
 
-<!-- <doc-sponsored-results></doc-sponsored-results> -->
 
 Note that, in the background, the `SponsoredLinksWebService` makes a call to the `query.links` API endpoint, every time the query text is modified (which does not include clicks on facets for example).
 
